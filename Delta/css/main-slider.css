@@ -1,0 +1,92 @@
+/* ------ mobilyslider
+-----------------------------------------------*/
+
+#content {
+width:100%;
+margin:auto;
+}
+
+.slider {
+float:left;
+width:100%;
+height:auto;
+position:relative;
+}
+
+.sliderContent {
+float:left;
+width:100%;
+height:300px;
+clear:both;
+position:relative;
+overflow:hidden;
+}
+
+.sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+background-image:url(../images/prev_next1.png);
+width:42px;
+height:42px;
+position:absolute;
+top:55%;
+margin-top:-34px;
+}
+
+.prev {
+background-position:0 0;
+left:15px;
+}
+
+.prev:hover {
+background-position:0 -44px;
+}
+
+.next {
+right:15px;
+background-position:-44px 0;
+}
+
+.next:hover {
+background-position:-44px -44px;
+}
+
+.sliderContent .item {
+position:absolute;
+width:100%;
+height:100%;
+background:#fff;
+}
+
+.item img {
+width:100%; height:100%;
+	}
+
+.sliderBullets {
+position:absolute;
+bottom:20px;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+
+.sliderBullets a {
+display:block;
+float:left;
+text-indent:-9999px;
+outline:none;
+margin-left:5px;
+width:20px;
+height:11px;
+background:url(../images/bullets1.png) no-repeat;
+}
+
+.sliderBullets .active {
+background-position:0 -11px;
+}
+
+.sliderContent a {
+outline:none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Main page </title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<script src="http://youtube.com/iframe_api"></script>
+<script src="js/jquery-2.2.3.min.js"> </script>
+<script src="js/jquery.plaxmove.js"> </script>
+<script src="js/jquery.tubular.1.0.js" type="text/javascript" charset="utf-8"> </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#blockiframe').tubular({videoId: 'dJinPdmOvwU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen', mute: false, wrapperZIndex: -1, repeat: false});
+	});
+</script>
+<script type="text/javascript">
+
+
+</script>
+</head>
+<body>
+	<header>
+	<div class="logo"><a href="../index.html"><img src="images/aion-logo.png" alt=""/></a> </div>
+	</header>
+
+
+    <div class="main-page">
+    	<div class="archangel-topleft"> <img src="images/archangel-topleft.png" alt=""/> </div>
+        <div class="archangel-topright"> <img src="images/archangel-topright.png" alt=""/> </div>
+        <div class="archangel-botleft"> <img src="images/archangel-botleft.png" alt=""/> </div>
+        <div class="archangel-botright"> <img src="images/archangel-botright.png" alt=""/> </div>
+        <div class="archangel-center"> <img src="images/archangel-center.png" alt=""/> </div>
+    </div>
+    <div id="black"> </div>
+	<!--<div id="blockiframe"> </div>-->
+
+	<nav>
+        <ul id="world">Мир игры
+	        <li><a href="pages/cataclism.html">Катаклизм</a></li>
+        	<li><a href="pages/razdelenie.html">Разделение рас</a></li>
+            <li><a href="pages/bezdna.html">Бездна</a></li>
+            <li><a href="pages/world-today.html">Мир сегодня</a></li>
+        </ul>
+        <a id="classes" href="pages/classes.html">Классы </a>
+        <a id="download" href="pages/download.html">Скачать игру</a>
+	</nav>
+	<footer>
+		<div class="gameforge"> <a href="https://gameforge.com/en_GB/home" target="_blank"> <img src="images/gameforge-logo.png" alt=""/> </a> </div>
+        <div class="footer-center">
+        	<p>AION® IS A REGISTERED TRADEMARK OF NCSOFT CORPORATION. COPYRIGHT © NCSOFT CORPORATION. GAMEFORGE 4D GMBH WAS GRANTED BY NCSOFT CORPORATION THE RIGHT TO PUBLISH, DISTRIBUTE AND TRANSMIT AION® IN EUROPE. ALL RIGHTS RESERVED. – AION CAN EASILY BE UNINSTALLED AT ANY TIME VIA YOUR WINDOWS CONTROL PANEL.</p>
+<p>v10.13.2 - PRODUCTION - PINKY - US</p>
+        </div>
+        <div class="ncsoft"><a href="http://us.ncsoft.com/en/" target="_blank"><img src="images/NCsoft-logo.png" alt=""/> </a> </div>
+	</footer>
+<script type="text/javascript">
+$(function(){
+ $('.archangel-topleft').plaxmove({ratioH:0.04,ratioV:0.05})
+ /*$('.archangel-topright').plaxmove({ratioH:0.05,ratioV:0.05})
+ $('.archangel-botleft').plaxmove({ratioH:0.06,ratioV:0.05})
+ $('.archangel-botright').plaxmove({ratioH:0.04,ratioV:0.05})
+ $('.archangel-center').plaxmove({ratioH:0.1,ratioV:0.1})*/
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    setTimeout(function () { $("#tubular-container")[0].remove();}, 63000)
+	setTimeout(function () { $("#black")[0].remove();}, 2000)
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+@charset "utf-8";
+* { font-family: Arial, sans-serif}
+body { position:fixed; top:0; left:0; right:0; overflow:hidden; height:auto; }
+
+/*МЕНЮ*/
+body { position:relative;}
+body nav { width:100%; height:10%; position:absolute; left:0; top:0; padding-top:3%; z-index:199;}
+body nav a, body nav ul {font-size:3vw; color:#fff; text-decoration:none; font-family:'Bad Script', cursive; margin:0; padding:0;}
+body nav a:hover { cursor:pointer; text-decoration:underline; }
+body nav ul li {display:none;  list-style:none;}
+body nav ul li:hover { display:block; text-decoration:underline;}
+
+
+#world { display:block; width:auto; position:absolute; left:7%;}
+#world:hover li {display:block; width:auto; }
+#world li:hover a { font-weight:bold;}
+#classes { display:block; width:auto; position:absolute; left:26%;}
+#download { display:block; width:auto; position:absolute; right:6%;}
+#download:before { width:100%; height:1.1em; position:absolute; content:""; left:-4vw; top:0.3em; background:url(../images/download-before.png) no-repeat; background-size:contain;}
+#world:before { width:100%; height:1.1em; position:absolute; content:""; left:-4vw; top:0.3em; background:url(../images/world-before.png) no-repeat; background-size:contain;}
+#classes:before { width:100%; height:1.1em; position:absolute; content:""; left:-4vw; top:0.3em; background:url(../images/classes-before.png) no-repeat; background-size:contain;}
+
+header {position:absolute; left:0; top:0; width:100%; height:auto; z-index:100;}
+.logo { width:23%; height:auto; margin:2% auto 0;}
+.logo img { width:100%; height:auto;}
+
+
+/*Подложка с видео*/
+#blockiframe{ width:100%; position:fixed; top:0; bottom:0;}
+#black {width:100%; height:100%; position:fixed; top:0; bottom:0; right:0; left:0; background:#000; z-index:99;}
+
+
+/*Главная страница */
+.main-page { width:100%; height:100vh; background:url(../images/main-bg.png) no-repeat; background-position:center center; background-size: cover; position:relative;}
+.archangel-topleft, .archangel-topright, .archangel-botleft, .archangel-botright, .archangel-center { position:absolute; width:20%; height:auto;}
+.archangel-topleft img, .archangel-topright img, .archangel-botleft img, .archangel-botright img, .archangel-center img { width:100%; height:auto;}
+.archangel-center { width:40%; height:auto; position:absolute; left:32%; top:24%;
+
+-webkit-animation: archangel-center 8s infinite ease-in-out ; 
+  -moz-animation: archangel-center 8s infinite ease-in-out;
+  -o-animation: archangel-center 8s infinite ease-in-out; 
+  animation: archangel-center 8s infinite ease-in-out; }
+
+.archangel-topleft { width:25%; height:auto; position:absolute; left:5%; top:13%;
+
+-webkit-animation: archangel-topleft 10s infinite ease-in-out ; 
+  -moz-animation: archangel-topleft 10s infinite ease-in-out;
+  -o-animation: archangel-topleft 10s infinite ease-in-out; 
+  animation: archangel-topleft 10s infinite ease-in-out;
+  animation-delay:1s; }
+
+.archangel-topright { width:34%; height:auto; position:absolute; left:65%; top:10%;
+
+-webkit-animation: archangel-topright 11s infinite ease-in-out ; 
+  -moz-animation: archangel-topright 11s infinite ease-in-out;
+  -o-animation: archangel-topright 11s infinite ease-in-out; 
+  animation: archangel-topright 11s infinite ease-in-out; 
+  animation-delay:1.2s;}
+  
+.archangel-botleft { width:17%; height:auto; position:absolute; left:17%; top:46%;
+
+-webkit-animation: archangel-botleft 7s infinite ease-in-out ; 
+  -moz-animation: archangel-botleft 7s infinite ease-in-out;
+  -o-animation: archangel-botleft 7s infinite ease-in-out; 
+  animation: archangel-botleft 7s infinite ease-in-out; }
+  
+.archangel-botright { width:20%; height:auto; position:absolute; left:55%; top:50%;
+
+-webkit-animation: archangel-botright  12s infinite ease-in-out ; 
+  -moz-animation: archangel-botright  12s infinite ease-in-out;
+  -o-animation: archangel-botright  12s infinite ease-in-out; 
+  animation: archangel-botright  12s infinite ease-in-out; }
+
+@-webkit-keyframes archangel-center {
+  0%   { }
+  50% {top:27.5%;}
+  100% { }}
+@-moz-keyframes archangel-center{
+  0%   { }
+  50% {top:27.5%;}
+  100% { }}
+@-o-keyframes archangel-center {
+  0%   { }
+  50% {top:27.5%;}
+  100% { }}
+@keyframes archangel-center {
+  0%   { }
+  50% {top:27.5%;}
+  100% { }}
+
+@-webkit-keyframes archangel-topleft {
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+@-moz-keyframes archangel-topleft{
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+@-o-keyframes archangel-topleft {
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+@keyframes archangel-topleft {
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+
+@-webkit-keyframes archangel-topright {
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+@-moz-keyframes archangel-topright{
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+@-o-keyframes archangel-topright{
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+@keyframes archangel-topright {
+  0%   { }
+  50% {top:12%;}
+  100% { }}
+
+@-webkit-keyframes archangel-botleft {
+  0%   { }
+  50% {top:49%;}
+  100% { }}
+@-moz-keyframes archangel-botleft{
+  0%   { }
+  50% {top:49%;}
+  100% { }}
+@-o-keyframes archangel-botleft{
+  0%   { }
+  50% {top:49%;}
+  100% { }}
+@keyframes archangel-botleft {
+  0%   { }
+  50% {top:49%;}
+  100% { }}
+
+@-webkit-keyframes archangel-botright {
+  0%   { }
+  50% {top:48%;}
+  100% { }}
+@-moz-keyframes archangel-botright{
+  0%   { }
+  50% {top:48%;}
+  100% { }}
+@-o-keyframes archangel-botright{
+  0%   { }
+  50% {top:48%;}
+  100% { }}
+@keyframes archangel-botright {
+  0%   { }
+  50% {top:48%;}
+  100% { }}
+
+
+/*ФУТЕР*/
+
+footer { width:100%; height:min-height; position:fixed; left:0; bottom:0; background:rgba(255,255,255,0.7); overflow:hidden; z-index:100; }
+.gameforge, .ncsoft { width:23%; height:auto; float:left; margin-top:1%;}
+.gameforge img, .ncsoft img { display:block; width:50%; margin:0 auto;}
+.footer-center { width:54%; height:100%; float:left;}
+.footer-center p { font-size:0.65vw; color:#000; text-align:center;}
+
+
+/*Cataclism*/
+.cataclism-container { width:100%; position:fixed; top:0; right:0; bottom:0; left:0; background: url(../images/cataclism_bg.png) no-repeat; background-size: cover;}
+.cataclism-world { width:auto; height:50%; margin-top:10%;}
+.cataclism-world img { display:block; width:auto; height:100%; margin:0 auto;}
+.cataclism-text { width:50%; height:auto; margin:0 auto; }
+.cataclism-text p {color:#fff; font-size:1em;}
+
+
+/*Razdelenie*/
+.razdelenie-container {width:100%; position:fixed; top:0; right:0; bottom:0; left:0; background: url(../images/razdelenie_bg.png) no-repeat; background-size: cover;}
+.chanter { width:auto; height:60%; position:absolute; left:2%; top:25%;}
+.chanter img { width:auto; height:100%;}
+.ranger { width:auto; height:60%; position:absolute; right:6%; top:22%;}
+.ranger img { width:auto; height:100%;}
+.chanter-text { width:70%; height:auto; color:#fff; font-size:1.2vw; text-align:justify;}
+.ranger-text { width:100%; height:auto; color:#fff; font-size:1.2vw; text-align:justify;}
+.chanter-text { position:absolute; left:70%; top:74%;}
+.ranger-text { position:absolute; right:60%; bottom:70%;}
+
+/*BEZDNA*/
+.bezdna-container { width:100%; position:fixed; top:0; right:0; bottom:0; left:0; background: url(../images/cataclism_bg.png) no-repeat; background-size: cover;}
+.bezdna { width:auto; height:100%; position:fixed; left:0; bottom:0; right:0; top:0; }
+.bezdna img { display:block; width:auto; height:100%; margin:0 auto;}
+.bezdna p { display:block; width:30%; height:auto; color:#fff; position:absolute; left:7%; top:25%; font-size:1em; text-align:justify;}
+
+
+/*World of...*/
+.transformed {transform-origin: 50% 50%;
+  transform: rotateY(30deg); width:100%; height:150px; background:rgba(227,23,27,1.00);}
+.world-today-container {  width:100%; position:fixed; top:0; right:0; bottom:0; left:0; background: url(../images/cataclism_bg.png) no-repeat; background-size: cover;}
+.world-today-container table { position:absolute; top:22%; left:19%; width:62%; height:60%; border:0; border-collapse:collapse; margin:0; padding:0;}
+.world-today-container table td img { width:80%; height:auto; cursor:pointer;}
+.cell-left, .cell-center, .cell-right { width:33%; padding:0; margin:0;}
+.cell-left { text-align:right;}
+.cell-right { text-align:left;}
+.cell-center {text-align:center;}
+
+
+/*Classes*/
+.classes-container {width:100%; position:fixed; top:0; right:0; bottom:0; left:0; background: url(../images/sky.png) no-repeat; background-size: cover;}
+.klasses { width:100%; height:auto; margin-top:10%;}
+.klass{ display:inline-block; vertical-align:top; width:30%; height:auto; margin:5% 1.2% 0 1.2%; position:relative; }
+.klass img { width:100%;}
+.left-a, .right-a { display:block; width:33%; height:auto; position: absolute; top:35%; font-size:1.6vw; text-transform:lowercase; color:#000; text-decoration:none; text-align:center;}
+.left-a { left:7%;}
+.right-a { right:7%;}
+.left-a:hover, .right-a:hover { text-decoration:underline;}
+
+/*Personages */
+.personage-wrap{width:100%; position:fixed; top:0; right:0; bottom:0; left:0; background: url(../images/sky.png) no-repeat; background-size: cover;}
+.personage-container { width:auto; height:67%; margin-top:11%;}
+.block-left, .block-center, .block-right { display:block; float:left; width:33.333333%; height:100%;}
+.gladiator, .strazhnik, .strelok, .killer, .zaklinatel, .mag, .celitel, .charodey, .bard, .sniper, .pilot {background-size:contain;}
+.gladiator { width:100%; height:100%; background:url(../images/gladiator.png) no-repeat center; background-size:contain;}
+.strazhnik { width:100%; height:100%; background:url(../images/strazhnik.png) no-repeat center; background-size:contain;}
+.strelok{ width:100%; height:100%; background:url(../images/strelok.png) no-repeat center; background-size:contain;}
+.killer{ width:100%; height:100%; background:url(../images/killer.png) no-repeat center; background-size:contain;}
+.zaklinatel{ width:100%; height:100%; background:url(../images/zaklinatel.png) no-repeat center; background-size:contain;}
+.mag{ width:100%; height:100%; background:url(../images/mag.png) no-repeat center; background-size:contain;}
+.celitel{ width:100%; height:100%; background:url(../images/celitel.png) no-repeat center; background-size:contain;}
+.charodey{ width:100%; height:100%; background:url(../images/charodey.png) no-repeat center; background-size:contain;}
+.bard{ width:100%; height:100%; background:url(../images/bard.png) no-repeat center; background-size:contain;}
+.sniper{ width:100%; height:100%; background:url(../images/sniper.png) no-repeat center; background-size:contain;}
+.pilot { width:100%; height:100%; background:url(../images/pilot.png) no-repeat center; background-size:contain;}
+#containingBlock { width:99%; box-shadow: 0px 0px 40px #163b86;}
+.videoWrapper { position:relative; padding-bottom:56.25%; height:0; margin-top:5%;}
+.videoWrapper object,.videoWrapper iframe { position:absolute; top:0; left:0; width:100%; height:100%;}
+.block-center span , .block-right span{ display:block; width:100%; font-size:1.3em; color:#000; text-align:center; margin:3% 0;}
+.block-center p{ text-align:justify; font-size:1em; margin-bottom:2%; }
+.block-right { padding:0 2% 0 65px; box-sizing:border-box;}
+.block-right p {font-size:1em; margin-bottom:2%; }
+.skills1, .skills2, .skills3 { display:block; width:100%; height:auto; position:relative;}
+
+.skills1:before, .skills2:before, .skills3:before {content:""; width:40px; height:40px; position:absolute; left:-50px; top:0;}
+
+.gladiator-skills .skills1:before { background: url(../images/skills/wave.png) no-repeat;}
+.gladiator-skills .skills2:before { background: url(../images/skills/robustimpulse.png) no-repeat;}
+.gladiator-skills .skills3:before { background: url(../images/skills/drop.png) no-repeat;}
+
+.killer-skills .skills1:before { background: url(../images/skills/hide.png) no-repeat; }
+.killer-skills .skills2:before { background: url(../images/skills/blindside.png) no-repeat;}
+.killer-skills .skills3:before { background: url(../images/skills/tigerbeat.png) no-repeat;}
+
+.strelok-skills .skills1:before { background: url(../images/skills/wildroar.png) no-repeat;}
+.strelok-skills .skills2:before { background: url(../images/skills/sandstorm.png) no-repeat;}
+.strelok-skills .skills3:before { background: url(../images/skills/heavyshot.png) no-repeat;}
+
+.strazhnik-skills .skills1:before { background: url(../images/skills/provocation.png)  no-repeat;}
+.strazhnik-skills .skills2:before { background: url(../images/skills/snatch.png) no-repeat;}
+.strazhnik-skills .skills3:before { background: url(../images/skills/rage.png) no-repeat;}
+
+.bard-skills .skills1:before { background: url(../images/skills/melodya_iscelenya.png)  no-repeat;}
+.bard-skills .skills2:before { background: url(../images/skills/echo_udara.png) no-repeat;}
+.bard-skills .skills3:before { background: url(../images/skills/melodya_illusii.png) no-repeat;}
+
+.pilot-skills .skills1:before { background: url(../images/skills/charged-punch.png)  no-repeat;}
+.pilot-skills .skills2:before { background: url(../images/skills/eathium-shield.png) no-repeat;}
+.pilot-skills .skills3:before { background: url(../images/skills/provoke-wave.png) no-repeat;}
+
+.zaklinatel-skills .skills1:before { background: url(../images/skills/elemental.png)  no-repeat;}
+.zaklinatel-skills .skills2:before { background: url(../images/skills/vacuum.png) no-repeat;}
+.zaklinatel-skills .skills3:before { background: url(../images/skills/fear.png) no-repeat;}
+
+.mag-skills .skills1:before { background: url(../images/skills/hellfire.png) no-repeat;}
+.mag-skills .skills2:before { background: url(../images/skills/sleep.png) no-repeat;}
+.mag-skills .skills3:before { background: url(../images/skills/gate.png) no-repeat;}
+
+.celitel-skills .skills1:before { background: url(../images/skills/massheal.png) no-repeat;}
+.celitel-skills .skills2:before { background: url(../images/skills/curemind.png) no-repeat;}
+.celitel-skills .skills3:before { background: url(../images/skills/painlinks.png) no-repeat;}
+
+.charodey-skills .skills1:before { background: url(../images/skills/crusader.png) no-repeat;}
+.charodey-skills .skills2:before { background: url(../images/skills/heal.png) no-repeat;}
+.charodey-skills .skills3:before { background: url(../images/skills/angelicwish.png) no-repeat;}
+
+.sniper-skills .skills1:before { background: url(../images/skills/crusader.png) no-repeat;}
+.sniper-skills .skills2:before { background: url(../images/skills/heal.png) no-repeat;}
+.sniper-skills .skills3:before { background: url(../images/skills/angelicwish.png) no-repeat;}
+
+@media screen and (max-width:1000px) {
+	.klass { width:46%;}
+	.left-a, .right-a { font-size:2vw; top:36%;}
+	.chanter { top:20%;}
+	.chanter-text { left:17%; top:100%;}
+	.ranger { top:30%;}
+	.ranger-text { bottom:100%; right:0;}
+	
+	}
+
+
+@media screen and (max-width:1000px) {
+	.klass { width:46%;}
+	.left-a, .right-a { font-size:2vw; top:36%;}
+	}

@@ -1,0 +1,847 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru-RU">
+
+<head>
+	<script type="text/javascript" src="/js/bundle-playback.js?v=TYoruszc" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+	<script>window.RufflePlayer = window.RufflePlayer || {}; window.RufflePlayer.config = { "autoplay": "on", "unmuteOverlay": "hidden" };</script>
+	<script type="text/javascript" src="/js/ruffle/ruffle.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/banner-styles.css?v=S1zqJCYt">
+	<link rel="stylesheet" type="text/css" href="/css/iconochive.css?v=qtvMKcIJ">
+	<!-- End Wayback Rewrite JS Include -->
+
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>АВТОКОВРИКИ - ПРОИЗВОДСТВО И ПРОДАЖА</title>
+	<meta name="description"
+		content="Производство автоковриков за 1 день по индивидуальным размерам на более чем 770 моделей авто">
+	<meta property="og:image" content="http://www.avtokovry.com.ua/scrin.jpg">
+	<meta property="og:title" content="АВТОКОВРИКИ - ПРОИЗВОДСТВО И ПРОДАЖА">
+	<meta property="og:description"
+		content="Производство автоковриков за 1 день по индивидуальным размерам на более чем 770 моделей авто">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="/css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="/fonts/MyriadProRegular/MyriadProRegular.ttf">
+	<link rel="stylesheet" type="text/css" href="/css/easy-autocomplete.css">
+	<link rel="stylesheet" type="text/css" href="/css/easy-autocomplete.themes.css">
+	<link href="/resourses/jquery-flexdatalist/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+	<script src="/js/jquery-2.2.3.min.js"></script>
+	<script src="/js/script.js"></script>
+	<script src="/js/jquery.fancybox.js"></script>
+	<script src="/js/jquery.maskedinput.js"></script>
+	<script src="/js/jquery.easy-autocomplete.js"> </script>
+	<script src="/js/owl.carousel.min.js"> </script>
+	<!--Просмотр фотографий во всплывающем окне и листинг фото. Инициализация.-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".fancybox").fancybox();
+		});
+	</script>
+	<!--Маска для телефона-->
+	<script type="text/javascript">
+		$(function ($) {
+			$.mask.definitions['~'] = '[+-]';
+			$("#phone, #phone2, #callback-phone").mask("+38 (999) 999 99 99");
+		});
+	</script>
+	<!--Включение и отключение скрипта в зависимости от разрешения и ширины экрана устройства-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var windowScreen = $(window).width();
+			if (windowScreen > 1142) {
+				$("#reviews-box, #catalog-box").addClass("owl-carousel owl-theme");
+				$("#reviews-box, #catalog-box").owlCarousel({
+					navigation: true,
+					slideSpeed: 300,
+					paginationSpeed: 400,
+					singleItem: true,
+					navigationText: ["", ""]
+				});
+			}
+			else { $("#reviews-box, #catalog-box").removeClass("owl-prev owl-next owl-buttons owl-controls clicable owl-carousel owl-theme "); }
+		});
+		$(window).resize(function () {
+			if ($(window).width() > 1142) {
+				$("#reviews-box, #catalog-box").addClass("owl-carousel owl-theme");
+				$("#reviews-box, #catalog-box").owlCarousel({
+					navigation: true,
+					slideSpeed: 300,
+					paginationSpeed: 400,
+					singleItem: true,
+					navigationText: ["", ""]
+				});
+			}
+			else { $("#reviews-box, #catalog-box").removeClass("owl-prev owl-next owl-buttons owl-controls clicable owl-carousel owl-theme "); }
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("._data_name").click(function () {
+				if ($("._data_name").val() == 'Ваше Имя*')
+					$("._data_name").val('');
+			});
+			$("._data_tel2").click(function () {
+				if ($("._data_tel2").val() == 'Ваш Телефон*')
+					$("._data_tel2").val('');
+			});
+		});
+	</script>
+
+	<script type="text/javascript" language="javascript">
+		function call(obj) {
+
+			var msg = $('.' + $(obj).attr('class')).serialize();
+			$.ajax({
+				type: 'POST',
+				url: 'Shelby/Shelby_send.php',
+				data: msg,
+				success: function (data) {
+					switch ($(obj).attr('class')) {
+						case "form_one":
+							$("._data_tel").val(' ');
+							break;
+						case "form_two":
+							$("._data_tel1").val(' ');
+							$("._data_marka").val(' ');
+							break;
+						case "form_three":
+							$("._data_name").val('Ваше Имя*');
+							$("._data_tel2").val('Ваш Телефон*');
+
+							$(".black").css('display', 'none');
+							$(".callback").css('display', 'none');
+							break;
+					}
+					/*	$("._data_tel").val('');
+ 
+			 $("._data_marka").val('');
+			*/
+				},
+				error: function (xhr, str) {
+					alert('Возникла ошибка: ' + xhr.responseCode);
+				}
+			});
+		}
+	</script>
+	<style type="text/css">
+		.fancybox-margin {
+			margin-right: 17px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="blackline"> </div>
+		<div class="container">
+			<div id="mobmenu">
+				<div id="burger"> </div>
+				<div class="moblogo"> </div>
+			</div>
+			<div class="header-top">
+				<div class="header-left">
+					<img src="images/Logo.png" alt="Автомобильные коврики" />
+				</div>
+				<div class="header-right">
+					<ul class="header-tels">
+						<li> <a href="tel:+380636474750">+38(063) 647-47-50</a> </li>
+						<li> <a href="tel:+380663318275">+38(066) 331-82-75</a> </li>
+						<li> <a href="tel:+380687172551">+38(068) 717-25-51</a> </li>
+					</ul>
+					<div class="header-callback">Заказать обратный звонок</div>
+					<nav>
+						<ul>
+							<li class="links"> <a href="#catalog">Каталог</a> </li>
+							<li class="links"> <a href="#advantages">Преимущества</a> </li>
+							<li class="links"> <a href="#reviews">Отзывы</a> </li>
+							<li class="links"> <a href="#delivery">Доставка</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header-left">
+					<h1>Продажа автоковриков</h1>
+					<p>индивидуальные размеры <br>
+						на более чем 900 моделей авто,<br>
+						доставка - 1 день</p>
+				</div>
+				<div class="header-right">
+					<h2>Оставить заявку на расчет стоимости коврика под ваш автомобиль</h2>
+					<p class="top">Ваш телефон*</p>
+					<form action="form.php" method="post" id="stoimost">
+						<input type="tel" name="tel" id="phone" required />
+						<input type="submit" id="stoimost-submit" value="Узнать стоимость" />
+					</form>
+					<p class="bottom">*Телефон нужен только для подтверждения заказа</p>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<div id="catalog">
+		<div class="container">
+			<h3>Каталог товаров</h3>
+			<div class="line"></div>
+			<div class="galery">
+				<div id="catalog-box"> <!-- class="owl-carousel owl-theme"-->
+					<div class="catalog-item">
+						<h4>Риф</h4>
+						<div class="price-mob">
+							<span class="price">549 грн. </span>
+						</div>
+						<div class="catalog-pic-box">
+							<div class="pic-box-main-wrap">
+								<div class="pic-box-main">
+									<img src="/images/Sapfir/sapfir-main.png" alt="" class="main-foto" />
+									<div class="pic-box-main-info">
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info1.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info1.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Ворсовый материал - монолит</span>
+												<p>Материал достаточно износостойкий, который позволяет иметь долгий срок службы.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info2.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info2.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Тесьма высокого качества</span>
+												<p>Имеются 7 видов цветов</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info3.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info3.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Резиново - пластиковый нижний слой</span>
+												<p>Резиново - пластиковый нижний слой, который не пропускает влагу.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="characters">
+									<div class="text-line">
+										<p>Страна производитель: <span>Бельгия</span></p>
+									</div>
+									<div class="text-line">
+										<p>Толщина ковра: <span>6 мм.</span></p>
+										<p>Материал ворса: <span>монолит</span></p>
+										<p>Высота ворса: <span>4 мм.</span></p>
+									</div>
+									<div class="text-line">
+										<p>Нижний слой: <span>резино-пластик со специальными шипами против скольжения.</span></p>
+									</div>
+									<div class="text-line">
+										<p class="textnormal">Как и более дорогие материалы, "Риф" не пропускает воду и остается гибким на
+											морозе.</p>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item-preview">
+								<div class="preview-item"><img src="/images/Sapfir/sapfir-main.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir2.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir3.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir4.png" alt="" /> </div>
+							</div>
+							<div class="price-box">
+								<p>Цена:<span class="price">549 грн. </span> </p>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<h4>Сапфир</h4>
+						<div class="price-mob">
+							<span class="price">730 грн. </span>
+						</div>
+						<div class="catalog-pic-box">
+							<div class="pic-box-main-wrap">
+								<div class="pic-box-main">
+									<img src="/images/Sapfir/sapfir-main.png" alt="" class="main-foto" />
+									<div class="pic-box-main-info">
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info1.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info1.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Ворсовый слой</span>
+												<p>Скрученный трехслойный плотный ворс - оптимальный материал.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info2.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info2.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Прочная окантовка</span>
+												<p>Имеются 7 видов цветов.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info3.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info3.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Нижний слой</span>
+												<p>Термопластичная резина</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="characters">
+									<div class="text-line">
+										<p>Страна производитель: <span>Голландия</span></p>
+									</div>
+									<div class="text-line">
+										<p>Толщина ковра: <span>6 мм.</span></p>
+										<p>Высота ворса: <span>4 мм.</span></p>
+									</div>
+									<div class="text-line">
+										<p>Нижний слой: <span>термо-пластичная резина</span></p>
+									</div>
+									<div class="text-line">
+										<p class="textnormal">Плотный скрученный ворс, не пропускает воду и устойчивый к изменениям
+											температуры.</p>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item-preview">
+								<div class="preview-item"><img src="/images/Sapfir/sapfir-main.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir2.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir3.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir4.png" alt="" /> </div>
+							</div>
+							<div class="price-box">
+								<p>Цена:<span class="price">730 грн. </span> </p>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<h4>Мустанг</h4>
+						<div class="price-mob">
+							<span class="price">869 грн. </span>
+						</div>
+						<div class="catalog-pic-box">
+							<div class="pic-box-main-wrap">
+								<div class="pic-box-main">
+									<img src="/images/Sapfir/sapfir-main.png" alt="" class="main-foto" />
+									<div class="pic-box-main-info">
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info1.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info1.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Ворсовый слой</span>
+												<p>Мягкий велюр - материал премиум сегмента. Легко чистится, отлично вписываться в салон любого
+													автомобиля.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info2.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info2.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Прочная окантовка</span>
+												<p>Имеются 7 видов цветов.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info3.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info3.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Нижний слой</span>
+												<p>Латексная основа, не пропускает влагу.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="characters">
+									<div class="text-line">
+										<p>Страна производитель: <span>Бельгия</span></p>
+									</div>
+									<div class="text-line">
+										<p>Толщина ковра: <span>8 мм.</span></p>
+										<p>Высота ворса: <span>5 мм.</span></p>
+									</div>
+									<div class="text-line">
+										<p>Нижний слой: <span>латекс</span></p>
+									</div>
+									<div class="text-line">
+										<p class="textnormal">Коврик трехслойный. Сделан с пропиленового двойного скрученного волокна.</p>
+										<p class="textnormal">Не пропускает воду и остается гибким на морозе. Износостойкий и легко
+											чистится.</p>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item-preview">
+								<div class="preview-item"><img src="/images/Sapfir/sapfir-main.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir2.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir3.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir4.png" alt="" /> </div>
+							</div>
+							<div class="price-box">
+								<p>Цена:<span class="price">869 грн. </span> </p>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<h4>Рекорд</h4>
+						<div class="price-mob">
+							<span class="price">699 грн. </span>
+						</div>
+						<div class="catalog-pic-box">
+							<div class="pic-box-main-wrap">
+								<div class="pic-box-main">
+									<img src="/images/Sapfir/sapfir-main.png" alt="" class="main-foto" />
+									<div class="pic-box-main-info">
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info1.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info1.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Ворсовый слой</span>
+												<p>Ребристый ворс, имеет высокую степень износостойкости, оригинальный материал марки OPEL.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info2.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info2.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Прочная окантовка</span>
+												<p>Имеются 7 видов цветов.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info3.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info3.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Резиновый слой</span>
+												<p>Антискользящий гранулят.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="characters">
+									<div class="text-line">
+										<p>Страна производитель: <span>Голландия</span></p>
+									</div>
+									<div class="text-line">
+										<p>Толщина ковра: <span>8 мм.</span></p>
+										<p>Высота ворса: <span>4 мм.</span></p>
+									</div>
+									<div class="text-line">
+										<p>Нижний слой: <span>гранулят</span></p>
+									</div>
+									<div class="text-line">
+										<p class="textnormal">Имеет ребристый ворс. Оригинальный внешний вид. Не пропускает воду, прост в
+											обслуживании, лёгкий и упругий.</p>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item-preview">
+								<div class="preview-item"><img src="/images/Sapfir/sapfir-main.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir2.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir3.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir4.png" alt="" /> </div>
+							</div>
+							<div class="price-box">
+								<p>Цена:<span class="price">699 грн. </span> </p>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<h4>Корона</h4>
+						<div class="price-mob">
+							<span class="price">999 грн. </span>
+						</div>
+						<div class="catalog-pic-box">
+							<div class="pic-box-main-wrap">
+								<div class="pic-box-main">
+									<img src="/images/Sapfir/sapfir-main.png" alt="" class="main-foto" />
+									<div class="pic-box-main-info">
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info1.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info1.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Ворсовый слой</span>
+												<p>Ребристый ворс, середина - пористая резина.Материал не накапливает влагу, дышащий,
+													трехслойный.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info2.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info2.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Прочная окантовка</span>
+												<p>Имеются 7 видов цветов.</p>
+											</div>
+										</div>
+										<div class="info-line">
+											<div class="info-pic">
+												<a class="fancybox" href="/images/Sapfir/sapfir-info3.png" data-fancybox-group="gallery5">
+													<img src="/images/Sapfir/sapfir-info3.png" alt="" />
+													<span> </span>
+												</a>
+											</div>
+											<div class="info-text">
+												<span>Резиновый слой</span>
+												<p>Пористая основа.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="characters">
+									<div class="text-line">
+										<p>Страна производитель: <span>Бельгия</span></p>
+									</div>
+									<div class="text-line">
+										<p>Толщина ковра: <span>10 мм.</span></p>
+										<p>Высота ворса: <span>6 мм.</span></p>
+									</div>
+									<div class="text-line">
+										<p>Нижний слой: <span>трехслойный, средний слой пористая резина.</span></p>
+									</div>
+									<div class="text-line">
+										<p class="textnormal">Материал "Корона" имеет ребристый особо плотный ворс и пористую основу.
+											Благодаря этому влага равномерно впитывается в коврики и также испаряется наружу.</p>
+										<p class="textnormal">Этот ковролин разработан и предназначен для всесезонной эксплуатации. Недаром
+											оригинальные коврики Mercedes­Benz изготавливаются именно из этого материала.</p>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item-preview">
+								<div class="preview-item"><img src="/images/Sapfir/sapfir-main.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir2.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir3.png" alt="" /> </div>
+								<div class="preview-item"><img src="/images/Sapfir/sapfir4.png" alt="" /> </div>
+							</div>
+							<div class="price-box">
+								<p>Цена:<span class="price">999 грн. </span> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="zakaz">
+		<div class="zakaz">
+			<h3>Оформить заказ</h3>
+			<form action="form.php" method="post" id="form-zakaz">
+				<p>Введите ваш номер телефона и выберите марку автомобиля</p>
+				<div class="input-line1">
+					<input type="tel" name="tel" id="phone2" required />
+					<label for="phone2">Ваш телефон*</label>
+					<span>*Телефон нужен только для подтверждения заказа</span>
+				</div>
+				<div class="input-line2">
+					<input type="text" id="marka-avto" placeholder="Начните выбор марки авто" required data-data='countries.json'
+						data-search-in='name' data-min-length='1' name='country_name_suggestion' />
+
+					<label for="marka-avto">Выберите модель авто</label>
+				</div>
+				<button type="submit" id="form-zakaz-submit" value="Заказать">Заказать</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="advantages">
+		<div class="container">
+			<div class="arrow"> </div>
+			<h3>Преимущества работы с нами</h3>
+			<div class="advantages-items">
+				<div class="advantages-item">
+					<div class="advantages-item-pic"><img src="/images/advantage1.png" alt="" /></div>
+					<div class="advantages-item-info">
+						<h4>Изготовление на заказ</h4>
+						<span>Мы шьем специально под размер Вашей машины </span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item-pic"><img src="/images/advantage2.png" alt="" /></div>
+					<div class="advantages-item-info">
+						<h4>Быстрая доставка</h4>
+						<span>Доставляем Вам на следующий день в любую точку Украины</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item-pic"><img src="/images/advantage3.png" alt="" /></div>
+					<div class="advantages-item-info">
+						<h4>Качественные материалы</h4>
+						<span>Работаем только с материалами из Европы</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<div class="advantages-item-pic"><img src="/images/advantage4.png" alt="" /></div>
+					<div class="advantages-item-info">
+						<h4>Всесезонные коврики</h4>
+						<span>Делаем всезесонные автомобильные коврики из влагостойкого материала</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="reviews">
+		<div class="container">
+			<div class="arrow"> </div>
+			<h3>Отзывы</h3>
+			<div id="reviews-box"> 
+				<div class="item">
+					<div class="review-item">
+						<div class="otziv-foto"><img src="/images/otziv-foto1.png" alt="" /> </div>
+						<p>«Очень порадовало бесплатное нанесение логотипа на коврик, давно хотел сделать. В первый же день успел
+							испачкать коврик, но ворс все быстро впитал. Спасибо, все качественно. Буду вас советовать».</p>
+						<span>Андрей Яковенко</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review-item">
+						<div class="otziv-foto"><img src="/images/otziv-foto2.png" alt="" /> </div>
+						<p>«Ковриками для моего Smarta довольна. Отмечу, что новые коврики намного больше покрывают обшивку, чем
+							заводские. Все сделали быстро, спасибо! Уже посоветовала вас всем своим подругам)»</p>
+						<span>Юлия Мовчан</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="review-item">
+						<div class="otziv-foto"><img src="/images/otziv-foto3.png" alt="" /> </div>
+						<p>«Долго не решался, покупать шерстянные коврики в авто или все-таки остаться на резиновых. Выбрав
+							шерстяные, остался доволен на 100%. У меня Хонда Аккорд, коврики полностью повторяют контур и придали еще
+							лучшего эстетического вида салону».</p>
+						<span>Давиденко Александр</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="delivery">
+		<div class="container">
+			<div class="arrow"> </div>
+			<h3>Условия доставки и оплаты</h3>
+			<div class="delivery-items">
+				<div class="delivery-item">
+					<div class="delivery-item-pic"><img src="/images/delivery1.png" alt="" /></div>
+					<div class="delivery-item-info">
+						<h4>Доставка по Украине Новой Почтой</h4>
+						<ul>
+							<li>Доставка в любой город Украины Новой Почтой </li>
+							<li>Срок доставки 1 - 2 дня </li>
+							<li>Стоимость доставки - 45 грн</li>
+						</ul>
+					</div>
+				</div>
+				<div class="delivery-item">
+					<div class="delivery-item-pic"><img src="/images/delivery2.png" alt="" /></div>
+					<div class="delivery-item-info">
+						<h4>Курьерская доставка по Киеву</h4>
+						<ul>
+							<li>Доставка на дом или работу</li>
+							<li>Стоимость доставки - 50 грн </li>
+						</ul>
+					</div>
+				</div>
+				<div class="delivery-item">
+					<div class="delivery-item-pic"><img src="/images/delivery3.png" alt="" /></div>
+					<div class="delivery-item-info">
+						<h4>Оплата при получении без предоплаты</h4>
+						<ul>
+							<li>Оплата за автоковрики производится при получении</li>
+							<li>Перед оплатой можно оценить качество наших автоковриков</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="partners">
+		<div class="container">
+			<div class="arrow"> </div>
+			<h3>Наши партнеры </h3>
+			<div class="partners">
+				<img src="/images/partners.png" alt="наши партнеры" />
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-left">
+					<h2>Партнерам</h2>
+					<p>Зарабатывайте вместе с нами. Действуют очень выгодные<br> партнерские условия. Нажмите на кнопку и
+						заполните<br> форму, чтобы узнать все условия подробнее.</p>
+					<div class="podrobnee">Подробнее</div>
+				</div>
+				<div class="footer-right">
+					<div class="footer-right-inner">
+						<h2>Звоните</h2>
+						<ul class="footer-tels">
+							<li> <a href="tel:+380636474750">+38(063) 647-47-50</a> </li>
+							<li> <a href="tel:+380663318275">+38(066) 331-82-75</a> </li>
+							<li> <a href="tel:+380687172551">+38(068) 717-25-51</a> </li>
+						</ul>
+					</div>
+					<div class="footer-right-inner footer-right-inner-right">
+						<h2>Email</h2>
+						<a href="mailto:avtokovrycomua@gmail.com">avtokovrycomua@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="line"> </div>
+			<div class="footer-bottom">
+				<div class="footer-left">
+					<p>Copyright @ 2016 - Untime studio & UIcodes studio<br>Все права защищены</p>
+				</div>
+				<div class="footer-right">
+					<p>Давайте дружить! :)</p>
+					<a href="https://www.facebook.com/avtokovriki.vors" target="_blank"><img src="images/Fb.png" /> </a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="black"> </div>
+	<div class="callback">
+		<span id="close"></span>
+		<p>Заполните поля ниже и наш менеджер свяжется с вами в рабочее время </p>
+		<form action="form.php" method="post" id="callback-form">
+			<input type="text" name="name" placeholder="Ваше Имя*" required />
+			<input type="text" name="tel" placeholder="Ваш Телефон*" id="callback-phone" required />
+			<button type="submit" value="Перезвоните мне" id="callback-submit">Перезвоните мне</button>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$(".preview-item img").bind("click", function () {
+				$(this).closest(".catalog-pic-box").find(".main-foto").attr("src", $(this).attr("src"));
+			});
+		});
+	</script>
+
+<script> 
+$('#marka-avto').flexdatalist({
+     minLength: 1,
+     searchIn: 'name',
+     data: 'resourses/countries.json'
+});
+</script>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$(window).resize(function () {
+				if ($(window).width() > 1140) {
+					$(".header-callback, .podrobnee").click(
+						function () {
+							$(".black, .callback").fadeIn();
+						}
+					);
+					$("#close, .black").click(
+						function () {
+							$(".black, .callback").fadeOut();
+						}
+					);
+				} else {
+					false
+				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".links").on("click", "a", function (event) {
+				event.preventDefault();
+				var id = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({ scrollTop: top }, 500);
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$(".arrow").click(function () {
+				$(this).parent().find(".advantages-items, #reviews-box,  .delivery-items, .partners").slideToggle("slow");
+				$(this).toggleClass("arrow-rotate");
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$("#burger").click(
+				function () {
+					$(".header-top .header-right nav ul").addClass("ul-menu");
+					$("#burger").css("display", "none");
+				}
+			)
+			$(".ul-menu li").click(
+				function () {
+					$(".ul-menu:before").removeClass("ul-menu");
+					$("#burger").css("display", "inherit");
+				}
+			)
+		});
+	</script>
+
+</body>
+
+</html>
