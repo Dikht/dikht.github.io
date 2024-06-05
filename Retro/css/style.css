@@ -1,0 +1,669 @@
+@charset "utf-8";
+
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #b9ccc0;
+}
+
+.bgtoprepeat {
+	width: 100%;
+	height: 259px;
+	background: url(../images/bg-top-repeat3.png) repeat;
+	position: absolute;
+}
+
+.bgtopline {
+	width: 100%;
+	height: 14px;
+	background: url(../images/bg-top-rvan.png) repeat-x;
+	position: absolute;
+	z-index: 20;
+}
+
+.container {
+	width: 1064px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	width: 100%;
+	height: 236px;
+	background: url(../images/bg-header.png) no-repeat;
+	box-shadow: 0px -50px 200px rgba(0, 0, 0, .5);
+	z-index: 5;
+	position: relative;
+}
+
+header:before {
+	width: 27px;
+	height: 15px;
+	content: "";
+	background: url(../images/corner-left.png) no-repeat;
+	position: absolute;
+	bottom: -9px;
+	left: -2px;
+}
+
+header:after {
+	width: 27px;
+	height: 15px;
+	content: "";
+	background: url(../images/corner-right.png) no-repeat;
+	position: absolute;
+	bottom: -9px;
+	right: -2px;
+}
+
+.logo {
+	width: 337px;
+	height: 147px;
+	display: block;
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	left: 43px;
+	top: 23px;
+}
+
+.social-container {
+	width: 832px;
+	height: 66px;
+	background: url(../images/line-skoba.png) no-repeat;
+	float: right;
+	margin-right: 51px;
+	margin-top: 7px;
+	position: relative;
+}
+
+.social-container ul {
+	list-style: none;
+	float: right;
+	position: absolute;
+	right: 30px;
+	top: 17px;
+}
+
+.social-container ul li {
+	float: left;
+	margin-right: 10px;
+}
+
+.social-container ul li a {
+	display: block;
+}
+
+.social-container ul:before {
+	width: 210px;
+	height: 17px;
+	content: "Keep in contacts";
+	color: rgba(204, 108, 0, 1.00);
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18px;
+	background: url(../images/dots.png) no-repeat right;
+	float: left;
+}
+
+#facebook {
+	width: 8px;
+	height: 16px;
+	background: url(../images/facebook.png) no-repeat;
+}
+
+#tweeter {
+	width: 13px;
+	height: 16px;
+	background: url(../images/tweeter.png) no-repeat;
+}
+
+#rss {
+	width: 16px;
+	height: 16px;
+	background: url(../images/rss.png) no-repeat;
+}
+
+#wifi {
+	width: 19px;
+	height: 16px;
+	background: url(../images/wifi.png) no-repeat;
+}
+
+.search-box {
+	width: 349px;
+	height: 53px;
+	background: url(../images/search-box.png) no-repeat;
+	position: absolute;
+	right: 93px;
+	top: 75px;
+}
+
+.search-box:before {
+	width: 290px;
+	height: 19px;
+	content: "";
+	background: url(../images/dots-line.png) left center;
+	position: absolute;
+	left: -230px;
+	top: 15px;
+}
+
+#search {
+	width: 260px;
+	height: 36px;
+	outline: none;
+	border: 0;
+	position: absolute;
+	left: 40px;
+	top: 5px;
+	background-color: transparent;
+	color: #82AEA1;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#lupa {
+	width: 18px;
+	height: 31px;
+	background: url(../images/lupa.png) no-repeat;
+	position: absolute;
+	right: 15px;
+	top: 7px;
+	transition: 1s ease-in-out;
+}
+
+.search-box:hover #lupa {
+	transform: scale(1.1, 1.1);
+}
+
+/*МЕНЮ*/
+.menu {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 190px;
+	left: 10px;
+}
+
+.menu ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.menu ul li {
+	display: inline-flex;
+	width: 168px;
+}
+
+.menu ul li a {
+	font-family: Oswald, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #4D3F28;
+	padding-left: 0px;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+.menu ul li a:hover {
+	transition: 1s ease;
+	color: #C77600;
+}
+
+/*ОСНОВНОЙ БЛОК*/
+.content {
+	width: 1014px;
+	height: auto;
+	background-color: #91b7ab;
+	margin: 0 auto;
+	margin-top: -12px;
+	padding-bottom: 30px;
+	box-shadow: 0px 10px 500px rgba(100, 102, 70, .9);
+}
+
+.greenstripe {
+	width: 997px;
+	height: 6px;
+	background: url(../images/green-stripe.png) no-repeat;
+	margin-top: 17px;
+	margin-left: 7px;
+	display: inline-block;
+}
+
+.slider {
+	width: 900px;
+	height: 295px;
+	background: url(../images/ramka.png) no-repeat;
+	position: relative;
+	display: inline-block;
+	margin: 0 34px;
+	padding: 22px;
+	margin-top: 17px;
+}
+
+.slider:before {
+	width: 102px;
+	height: 83px;
+	content: "";
+	background: url(../images/cursor-left.png) no-repeat;
+	position: absolute;
+	left: -54px;
+	top: 130px;
+	cursor: pointer;
+}
+
+.slider:after {
+	width: 102px;
+	height: 83px;
+	content: "";
+	background: url(../images/cursor-right.png) no-repeat;
+	position: absolute;
+	right: -54px;
+	top: 130px;
+	cursor: pointer;
+}
+
+.banner {
+	width: 915x;
+	height: 297px;
+	background: url(../images/banner.png) no-repeat;
+	overflow: hidden;
+}
+
+.content h2 {
+	font-family: 'Titan One', cursive;
+	font-size: 24px;
+	font-weight: 400;
+	padding-top: 45px;
+	padding-bottom: 55px;
+	text-align: center;
+	position: relative;
+}
+
+.content h2:after {
+	width: 36px;
+	height: 36px;
+	content: "";
+	background: url(../images/star.png) no-repeat;
+	display: inline-block;
+	position: absolute;
+	bottom: 15px;
+}
+
+/*БЛОКИ С ЛЕНТАМИ*/
+.blocks {
+	width: 98%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.block1,
+.block2,
+.block3 {
+	width: 33.333%;
+	height: auto;
+	float: left;
+	vertical-align: top;
+	position: relative;
+}
+
+.lenta1,
+.lenta2,
+.lenta3 {
+	width: 100%;
+	height: 86px;
+	background-size: cover;
+	padding: 0 -15px 0 20px
+}
+
+.lenta1 {
+	background: url(../images/lenta1.png) no-repeat;
+	background-size: cover;
+}
+
+.name1,
+.name2,
+.name3 {
+	width: 289px;
+	height: 51px;
+	position: absolute;
+	left: 17px;
+	top: 20px;
+	text-align: center;
+	background: url(../images/polosa-befaft.png) repeat-x center;
+}
+
+.name1 h3,
+.name2 h3,
+.name3 h3 {
+	font-family: 'Six Caps', sans-serif;
+	font-size: 36px;
+	color: #4e2400;
+	display: block;
+}
+
+.name1 h3:before,
+.name2 h3:before,
+.name3 h3:before {
+	content: "";
+	width: 150px;
+	height: 19px;
+	background: url(../images/polosa-befaft.png) repeat-x;
+	overflow: hidden;
+}
+
+.text1,
+.text2,
+.text3 {
+	width: 70%;
+	height: auto;
+	padding: 30px 15% 30px 15%;
+	text-align: justify;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	position: relative;
+}
+
+.text1:before {
+	width: 28px;
+	height: 26px;
+	content: "";
+	background: url(../images/star2.png);
+	position: absolute;
+	left: 13px;
+	top: 35px;
+}
+
+.video1,
+.video2,
+.video3 {
+	width: 289px;
+	height: 118px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.video1 {
+	background: url(../images/video1.png) no-repeat;
+}
+
+.play {
+	width: 30px;
+	height: 30px;
+	background: url(../images/play.png) no-repeat;
+	position: absolute;
+	left: 120px;
+	top: 44px;
+	visibility: hidden;
+}
+
+.video1:hover .play,
+.video2:hover .play,
+.video3:hover .play {
+	visibility: visible;
+	cursor: pointer;
+}
+
+.video1 p,
+.video2 p,
+.video3 p {
+	display: block;
+	position: absolute;
+	bottom: -15px;
+	left: 150px;
+	font-size: 9px;
+}
+
+.video1 p:before,
+.video2 p:before,
+.video3 p:before {
+	width: 123px;
+	height: 32px;
+	content: "";
+	background: url(../images/corner-dotted.png) no-repeat;
+	position: absolute;
+	left: -127px;
+	top: -25px;
+}
+
+/*БЛОК2*/
+.lenta2 {
+	background: url(../images/lenta2.png) no-repeat;
+}
+
+.name2 {
+	width: 291px;
+}
+
+.text2:before {
+	width: 17px;
+	height: 53px;
+	content: "";
+	background: url(../images/skobka.png);
+	position: absolute;
+	left: 13px;
+	top: 35px;
+}
+
+.video2 {
+	background: url(../images/video2.png) no-repeat;
+}
+
+/*БЛОК3*/
+.lenta3 {
+	background: url(../images/lenta3.png) no-repeat;
+	background-size: cover;
+}
+
+.name3 {
+	left: 27px;
+}
+
+.text3:before {
+	width: 28px;
+	height: 25px;
+	content: "";
+	background: url(../images/quotes.png) no-repeat;
+	position: absolute;
+	left: 13px;
+	top: 35px;
+}
+
+.video3 {
+	background: url(../images/video3.png) no-repeat;
+}
+
+/*Слайдер внизу*/
+.slider-final {
+	width: 984px;
+	height: 219px;
+	display: inline-block;
+	position: relative;
+	background: url(../images/slider-final.png) no-repeat;
+	margin: 60px 0 0 15px;
+	margin-bottom: 35px;
+}
+
+.galery2 {
+	width: 644px;
+	height: 139px;
+	position: absolute;
+	left: 168px;
+	top: 24px;
+}
+
+.galery2 img {
+	display: inline-block;
+	margin-right: 26px;
+}
+
+.galery2 img:hover {
+	cursor: pointer;
+}
+
+.galery2 img:last-child {
+	margin-right: 0;
+}
+
+/*ФУТЕР*/
+footer {
+	width: 1064px;
+	height: 272px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.polosa {
+	width: 100%;
+	height: 91px;
+	background: url(../images/foot-polosa.png) no-repeat;
+	position: absolute;
+	top: -32px;
+	z-index: 30;
+}
+
+.polosa:before {
+	width: 27px;
+	height: 15px;
+	content: "";
+	background: url(../images/foot-before.png) no-repeat;
+	position: absolute;
+	bottom: 5px;
+	left: -2px;
+}
+
+.polosa:after {
+	width: 27px;
+	height: 15px;
+	content: "";
+	background: url(../images/foot-after.png) no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+	right: -2px;
+}
+
+.polosa p {
+	float: right;
+	padding: 36px 40px 0 0;
+	font-family: Oswald, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	color: #d96c33;
+}
+
+.footer-main {
+	width: 1014px;
+	height: 294px;
+	position: relative;
+	margin-left: 25px;
+	background: url(../images/footer-main.png);
+	z-index: 20;
+	box-shadow: 0px 30px 200px rgba(0, 0, 0, .6);
+	overflow: hidden;
+}
+
+.footer-main .logo {
+	position: absolute;
+	top: 70px;
+}
+
+.greenstripe2 {
+	width: 997px;
+	height: 6px;
+	background: url(../images/green-stripe.png) no-repeat;
+	margin-top: 45px;
+	margin-left: 7px;
+	display: inline-block;
+}
+
+.ft-repeat {
+	width: 100%;
+	height: 294px;
+	background: url(../images/ft-repeat-small.png) repeat-x;
+	position: relative;
+}
+
+.bots {
+	width: 630px;
+	height: 235px;
+	float: right;
+}
+
+.bots:before {
+	width: 631px;
+	height: 29px;
+	content: "";
+	background: url(../images/dots2.png) no-repeat;
+	position: absolute;
+	top: 137px;
+}
+
+.bots:after {
+	width: 46px;
+	height: 42px;
+	content: "";
+	background: url(../images/quotes2.png) no-repeat;
+	position: absolute;
+	top: 77px;
+	right: 20px;
+}
+
+.bot1,
+.bot2,
+.bot3 {
+	width: 150px;
+	height: auto;
+	float: right;
+	margin-right: 26px;
+	padding-top: 55px;
+}
+
+.bot1 li,
+.bot2 li,
+.bot3 li {
+	list-style: none;
+	font-size: 12px;
+}
+
+.bot1 p,
+.bot1 a,
+.bot2 a,
+.bot3 a {
+	font-family: Oswald;
+	font-size: 12px;
+	color: #2f8271;
+	text-decoration: none;
+}
+
+.bot1 li a:hover,
+.bot2 li a:hover,
+.bot3 li a:hover {
+	color: #C77600;
+}
+
+.bot1 {
+	margin-right: 75px;
+}
+
+.punkt {
+	width: 100%;
+	height: 30px;
+	padding-bottom: 20px;
+}
+
+.punkt span {
+	font-family: Oswald;
+	font-size: 18px;
+	color: #2d1600;
+	text-decoration: none;
+}
+
+.bot1 p {
+	text-align: justify;
+}
