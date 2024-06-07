@@ -2,135 +2,29 @@
 <html lang="ru-RU">
 
 <head>
-	<script type="text/javascript" src="/js/bundle-playback.js?v=TYoruszc" charset="utf-8"></script>
-	<script type="text/javascript" src="/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
-	<script>window.RufflePlayer = window.RufflePlayer || {}; window.RufflePlayer.config = { "autoplay": "on", "unmuteOverlay": "hidden" };</script>
-	<script type="text/javascript" src="/js/ruffle/ruffle.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="/css/banner-styles.css?v=S1zqJCYt">
-	<link rel="stylesheet" type="text/css" href="/css/iconochive.css?v=qtvMKcIJ">
-	<!-- End Wayback Rewrite JS Include -->
-
 	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8">
 	<title>АВТОКОВРИКИ - ПРОИЗВОДСТВО И ПРОДАЖА</title>
 	<meta name="description"
 		content="Производство автоковриков за 1 день по индивидуальным размерам на более чем 770 моделей авто">
-	<meta property="og:image" content="http://www.avtokovry.com.ua/scrin.jpg">
 	<meta property="og:title" content="АВТОКОВРИКИ - ПРОИЗВОДСТВО И ПРОДАЖА">
 	<meta property="og:description"
 		content="Производство автоковриков за 1 день по индивидуальным размерам на более чем 770 моделей авто">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="/css/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
-	<link rel="stylesheet" href="/fonts/MyriadProRegular/MyriadProRegular.ttf">
-	<link rel="stylesheet" type="text/css" href="/css/easy-autocomplete.css">
-	<link rel="stylesheet" type="text/css" href="/css/easy-autocomplete.themes.css">
-	<link href="/resourses/jquery-flexdatalist/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
-	<script src="/js/jquery-2.2.3.min.js"></script>
-	<script src="/js/script.js"></script>
-	<script src="/js/jquery.fancybox.js"></script>
-	<script src="/js/jquery.maskedinput.js"></script>
-	<script src="/js/jquery.easy-autocomplete.js"> </script>
-	<script src="/js/owl.carousel.min.js"> </script>
-	<!--Просмотр фотографий во всплывающем окне и листинг фото. Инициализация.-->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".fancybox").fancybox();
-		});
-	</script>
-	<!--Маска для телефона-->
-	<script type="text/javascript">
-		$(function ($) {
-			$.mask.definitions['~'] = '[+-]';
-			$("#phone, #phone2, #callback-phone").mask("+38 (999) 999 99 99");
-		});
-	</script>
-	<!--Включение и отключение скрипта в зависимости от разрешения и ширины экрана устройства-->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			var windowScreen = $(window).width();
-			if (windowScreen > 1142) {
-				$("#reviews-box, #catalog-box").addClass("owl-carousel owl-theme");
-				$("#reviews-box, #catalog-box").owlCarousel({
-					navigation: true,
-					slideSpeed: 300,
-					paginationSpeed: 400,
-					singleItem: true,
-					navigationText: ["", ""]
-				});
-			}
-			else { $("#reviews-box, #catalog-box").removeClass("owl-prev owl-next owl-buttons owl-controls clicable owl-carousel owl-theme "); }
-		});
-		$(window).resize(function () {
-			if ($(window).width() > 1142) {
-				$("#reviews-box, #catalog-box").addClass("owl-carousel owl-theme");
-				$("#reviews-box, #catalog-box").owlCarousel({
-					navigation: true,
-					slideSpeed: 300,
-					paginationSpeed: 400,
-					singleItem: true,
-					navigationText: ["", ""]
-				});
-			}
-			else { $("#reviews-box, #catalog-box").removeClass("owl-prev owl-next owl-buttons owl-controls clicable owl-carousel owl-theme "); }
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			$("._data_name").click(function () {
-				if ($("._data_name").val() == 'Ваше Имя*')
-					$("._data_name").val('');
-			});
-			$("._data_tel2").click(function () {
-				if ($("._data_tel2").val() == 'Ваш Телефон*')
-					$("._data_tel2").val('');
-			});
-		});
-	</script>
-
-	<script type="text/javascript" language="javascript">
-		function call(obj) {
-
-			var msg = $('.' + $(obj).attr('class')).serialize();
-			$.ajax({
-				type: 'POST',
-				url: 'Shelby/Shelby_send.php',
-				data: msg,
-				success: function (data) {
-					switch ($(obj).attr('class')) {
-						case "form_one":
-							$("._data_tel").val(' ');
-							break;
-						case "form_two":
-							$("._data_tel1").val(' ');
-							$("._data_marka").val(' ');
-							break;
-						case "form_three":
-							$("._data_name").val('Ваше Имя*');
-							$("._data_tel2").val('Ваш Телефон*');
-
-							$(".black").css('display', 'none');
-							$(".callback").css('display', 'none');
-							break;
-					}
-					/*	$("._data_tel").val('');
- 
-			 $("._data_marka").val('');
-			*/
-				},
-				error: function (xhr, str) {
-					alert('Возникла ошибка: ' + xhr.responseCode);
-				}
-			});
-		}
-	</script>
-	<style type="text/css">
-		.fancybox-margin {
-			margin-right: 17px;
-		}
-	</style>
+		<link rel="stylesheet" type="text/css" href="/js/jquery-flexdatalist/jquery.flexdatalist.css">
+		<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="/css/owl.theme.css">
+		<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="/css/easy-autocomplete.css">
+		<link rel="stylesheet" type="text/css" href="/css/easy-autocomplete.themes.css">
+		<link href="/fonts/MyriadProRegular/MyriadProRegular.ttf">
+		<script src="/js/jquery-2.2.3.min.js"></script>
+		<script src="/js/jquery-flexdatalist/jquery.flexdatalist.js"></script>
+		<script src="/js/jquery.fancybox.js"></script>
+		<script src="/js/jquery.maskedinput.js"></script>
+		<script src="/js/jquery.easy-autocomplete.js"> </script>
+		<script src="/js/owl.carousel.min.js"> </script>
+		<script src="/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
@@ -585,15 +479,28 @@
 			<h3>Оформить заказ</h3>
 			<form action="form.php" method="post" id="form-zakaz">
 				<p>Введите ваш номер телефона и выберите марку автомобиля</p>
+
 				<div class="input-line1">
-					<input type="tel" name="tel" id="phone2" required />
+					<input 
+					type="tel" 
+					name="tel" 
+					id="phone2" 
+					required />
 					<label for="phone2">Ваш телефон*</label>
 					<span>*Телефон нужен только для подтверждения заказа</span>
 				</div>
-				<div class="input-line2">
-					<input type="text" id="marka-avto" placeholder="Начните выбор марки авто" required data-data='countries.json'
-						data-search-in='name' data-min-length='1' name='country_name_suggestion' />
 
+				<div class="input-line2">
+					<input
+					type="text" 
+					name="country_name_suggestion"
+					class="marka-avto"
+					id="marka-avto"
+					placeholder="Начните выбор марки авто"
+					data-data="/resourses/cars.json"
+					data-search-in="name"
+					data-min-length="1"
+					required/>
 					<label for="marka-avto">Выберите модель авто</label>
 				</div>
 				<button type="submit" id="form-zakaz-submit" value="Заказать">Заказать</button>
@@ -642,7 +549,7 @@
 		<div class="container">
 			<div class="arrow"> </div>
 			<h3>Отзывы</h3>
-			<div id="reviews-box"> 
+			<div id="reviews-box">
 				<div class="item">
 					<div class="review-item">
 						<div class="otziv-foto"><img src="/images/otziv-foto1.png" alt="" /> </div>
@@ -747,7 +654,7 @@
 			<div class="line"> </div>
 			<div class="footer-bottom">
 				<div class="footer-left">
-					<p>Copyright @ 2016 - Untime studio & UIcodes studio<br>Все права защищены</p>
+					<p>Copyright @ UIcodes studio<br>Все права защищены</p>
 				</div>
 				<div class="footer-right">
 					<p>Давайте дружить! :)</p>
@@ -776,13 +683,13 @@
 		});
 	</script>
 
-<script> 
-$('#marka-avto').flexdatalist({
+	<script>
+$('.marka-avto').flexdatalist({
      minLength: 1,
      searchIn: 'name',
-     data: 'resourses/countries.json'
+     data: 'countries.json'
 });
-</script>
+	</script>
 
 	<script type="text/javascript">
 		$(document).ready(function (e) {

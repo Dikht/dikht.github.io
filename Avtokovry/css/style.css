@@ -554,15 +554,15 @@ nav ul li a:hover {
 }
 
 #phone2,
-#marka-avto {
-	width: 237px;
-	height: 46px;
-	color: #000;
-	padding: 0 20px;
-	border: 1px solid #d1d1d1;
-	position: absolute;
-	top: 0;
-	right: 0;
+.marka-avto {
+	width: 237px !important;
+	height: 46px !important;
+	color: #000 !important;
+	padding: 0 20px !important;
+	border: 1px solid #d1d1d1 !important;
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
 }
 
 #marka-avto::-webkit-input-paceholder {
@@ -609,8 +609,6 @@ nav ul li a:hover {
 	background: #FFAE26;
 	cursor: pointer;
 }
-
-
 
 /* Advantages */
 #advantages {
@@ -673,8 +671,6 @@ nav ul li a:hover {
 	font-size: 16px;
 }
 
-
-
 /* Reviews */
 #reviews {
 	width: auto;
@@ -729,8 +725,6 @@ nav ul li a:hover {
 	font-weight: bold;
 	text-align: right;
 }
-
-
 
 /* Delivery */
 #delivery {
@@ -801,8 +795,6 @@ nav ul li a:hover {
 	top: 0;
 }
 
-
-
 /* Partners */
 #partners {
 	width: auto;
@@ -839,8 +831,6 @@ nav ul li a:hover {
 	height: auto;
 	margin: 0 auto 73px auto;
 }
-
-
 
 /* Footer */
 footer {
@@ -893,6 +883,7 @@ footer p {
 	-moz-box-sizing: border-bor;
 	-ms-box-sizing: border-box;
 	-o-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .footer-right {
@@ -905,6 +896,7 @@ footer p {
 	-moz-box-sizing: border-bor;
 	-ms-box-sizing: border-box;
 	-o-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .footer-bottom .footer-left {
@@ -1033,7 +1025,6 @@ footer .line {
 	background: #E4E4E4;
 }
 
-#callback-phone {}
 
 #callback-submit {
 	width: 272px;
@@ -1836,4 +1827,7 @@ footer .line {
 		color: #646464;
 	}
 
+	.fancybox-margin {
+		margin-right: 17px;
+	}
 }
