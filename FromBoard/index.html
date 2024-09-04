@@ -46,10 +46,10 @@
       <nav class="hidden">
         <div>
           <ul>
-            <li><a href="">Калькулятор</a></li>
-            <li><a href="">О нас</a></li>
-            <li><a href="">Гарантии</a></li>
-            <li><a href="">Отзывы</a></li>
+            <li><a href="#calc">Калькулятор</a></li>
+            <li><a href="#aboutUs">О нас</a></li>
+            <li><a href="#warranty">Гарантии</a></li>
+            <li><a href="#review">Отзывы</a></li>
           </ul>
         </div>
         <div><a href="#questions"><button type="button" class="button">Оставить заявку</button></a></div>
@@ -65,14 +65,14 @@
 
 <main>
 <div class="container">
-	<section class="intro">
+	<section class="intro" >
 		<h1>Беcпроблемная доставка купленных вещей из США, Европы и Азии в Россию</h1>
 		<p>Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать
 			товары со всего мира и получать их в России</p>
 		<img src="images/dist/Rectangle_2.png" alt="">
 	</section>
 
-	<section class="calc">
+	<section class="calc" id="calc">
 		<h2>Калькулятор доставки</h2>
 		<p>Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
 		<form action="/catalog/" autocomplete="on" method="post" class="calc_form" id="calc_form" name="calc_form">
@@ -89,7 +89,7 @@
 		</form>
 	</section>
 
-	<section class="advantages">
+	<section class="advantages" id="aboutUs">
 		<h3>Наши преимущества</h3>
 		<div class="adv-item">
 			<div class="adv-item-left">
@@ -153,7 +153,7 @@
 		</div>
 	</section>
 
-	<section class="warranty">
+	<section class="warranty" id="warranty">
 		<h3>Гарантии качества</h3>
 		<p>Наши гарантии качества включают в себя полный спектр документов, необходимых для ввоза и вывоза товаров, а также
 			для успешного бизнеса на мировом рынке.
@@ -179,7 +179,7 @@
 		<button>Показать больше документов</button>
 	</section>
 
-	<section class="review">
+	<section class="review" id="review">
 		<h3>Отзывы</h3>
 		<div class="f-carousel" id="myCarousel">
 			<div class="f-carousel__viewport">
@@ -219,7 +219,7 @@
 		</div>
 	</section>
 
-	<section class="questions" id="questions">
+	<section class="questions">
 		<h3>Остались вопросы?</h3>
 		<form action="/catalog/" method="post" name="questions_form" class="questions_form" id="questions_form">
 			<input type="text" name="Name" placeholder="Имя" class="input_name" required>
