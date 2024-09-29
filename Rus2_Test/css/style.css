@@ -3,16 +3,19 @@ body {
 	font-size: 22px;
 	color: #FFFFFF;
 	background-color: #171422;
-	max-width: 1920px;
+	width: 100%;
 	margin: 0 auto;
 	line-height: 1.3;
 }
 
 .wrap {
-	width: 100%;
-	max-width: 1420px;
+	width: 1420px;
 	margin: 0 auto;
 	background-color: none;
+}
+
+header, main, footer {
+	width: 1920px;
 }
 
 header {
