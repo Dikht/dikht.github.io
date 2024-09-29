@@ -3,7 +3,9 @@ body {
 	font-size: 22px;
 	color: #FFFFFF;
 	background-color: #171422;
-	width: 1920px;
+	width: 100%;
+	min-width: 1420px;
+	max-width: 1920px;
 	margin: 0 auto;
 	line-height: 1.3;
 }
