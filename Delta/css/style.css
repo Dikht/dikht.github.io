@@ -17,6 +17,7 @@ body {
 
 body {
 	background: #F9FDFF;
+
 }
 
 ::selection {
@@ -2266,7 +2267,7 @@ button.continue {
 	}
 }
 
-@media screen and (min-width:320px) and (max-width:599px) {
+@media screen and (min-width:0px) and (max-width:599px) {
 	header {
 		box-shadow: #A2A2A2 5px 5px 15px;
 	}
@@ -2291,7 +2292,8 @@ button.continue {
 
 	.wrap,
 	.main {
-		width: 100%
+		width: 100%;
+		min-width: 320px;
 	}
 
 	#logo {
