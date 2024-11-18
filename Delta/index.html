@@ -1,843 +1,875 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
-<meta charset="utf-8">
-
-<!--
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, scalable=no">
--->
-
-<title> Главная страница интернет-магазина</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="js/jquery-2.2.2.min.js"> </script>
-<script src="js/mobilyslider.js"> </script>
-<script src="js/jquery.rateit.js"> </script>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title> Главная страница интернет-магазина</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-2.2.2.min.js"> </script>
+	<script src="js/mobilyslider.js"> </script>
+	<script src="js/jquery.rateit.js"> </script>
 </head>
 
 <body>
-<div class="wrap">
-<header> 
-	<div class="header-top-line">
-    	<a class="tele1" href="tel:+380501234567">(067) 123-45-67</a>
-        <a class="tele2" href="tel:+380501234567">(050) 123-45-67</a>
-		<div class="header-top-line-left">
-            <a href="#">Адреса магазинов</a>
-            <a href="#">Доставка и оплата</a>
-            <a href="#">Контакты</a> 
-        </div>
-        <div class="header-top-line-right">
-            <div id="registration">Регистрация</div>
-            <div id="login">Войти</div>
-        </div>
-    </div>
-	<div class="niz-shapki">
-    	<div id="logo">
-        	<a href="#"> </a> 
-        </div>
-        <div id="wrap-search" class=""> 
-        	<form action="#" name="search">
-        		<input type="search" id="searchp" placeholder="Что Вы ищете?"/>
-            	<input id="find-btn" type="submit" value="Поиск"/>
-            </form>
-        </div>
-        <div id="telephone"> 
-         <p > <a class="tele2" href="tel:+380501234567">(067) 123-45-67</a></p>
-         <p > <a class="tele1" href="tel:+380501234567">(050) 123-45-67</a></p>
-       </div>
-        <div id="korzina"> 
-        	<a href="#"> 
-            	<div class="korzina-circle"><span id="n-pokup">5</span></div>
-            </a>
-        </div>
-    </div> 
-</header>
+	<div class="wrap">
+		<header>
+			<div class="header-top-line">
+				<a class="tele1" href="tel:+380501234567">(067) 123-45-67</a>
+				<a class="tele2" href="tel:+380501234567">(050) 123-45-67</a>
+				<div class="header-top-line-left">
+					<a href="#">Адреса магазинов</a>
+					<a href="#">Доставка и оплата</a>
+					<a href="#">Контакты</a>
+				</div>
+				<div class="header-top-line-right">
+					<div id="registration">Регистрация</div>
+					<div id="login">Войти</div>
+				</div>
+			</div>
+			<div class="niz-shapki">
+				<div id="logo">
+					<a href="#"> </a>
+				</div>
+				<div id="wrap-search" class="">
+					<form action="#" name="search">
+						<input type="search" id="searchp" placeholder="Что Вы ищете?" />
+						<input id="find-btn" type="submit" value="Поиск" />
+					</form>
+				</div>
+				<div id="telephone">
+					<p> <a class="tele2" href="tel:+380501234567">(067) 123-45-67</a></p>
+					<p> <a class="tele1" href="tel:+380501234567">(050) 123-45-67</a></p>
+				</div>
+				<div id="korzina">
+					<a href="#">
+						<div class="korzina-circle"><span id="n-pokup">5</span></div>
+					</a>
+				</div>
+			</div>
+		</header>
 
 
-<!--Контейнер-оболочка для меню -->
-<div class="wrap-menu">
-<nav class="menu"> 
-	<ul class="level1"><a href="#">МЕНЮ</a>
-        <li><a href="catalog-notebooks.html">Ноутбуки</a>
-        	<ul class="level2 pic-komp">
-                        <!-- Оболочка для выпадающего списка меню -->
-                            <li><a href="catalog-notebooks.html">ASUS</a></li>
-                            <li><a href="catalog-notebooks.html">Acer</a></li>
-                            <li><a href="catalog-notebooks.html">Apple</a></li>
-                            <li><a href="catalog-notebooks.html">Dell</a></li>
-                            <li><a href="catalog-notebooks.html">Fujitsu</a></li>
-                            <li><a href="catalog-notebooks.html">HP</a></li>
-                            <li><a href="catalog-notebooks.html">Lenovo</a></li>
-                            <li><a href="catalog-notebooks.html">MSI</a></li>
-                            <li><a href="catalog-notebooks.html">Panasonic</a></li>
-                            <li><a href="catalog-notebooks.html">Samsung</a></li>
-                            <li><a href="catalog-notebooks.html">Sony</a></li>
-                            <li><a href="catalog-notebooks.html">Toshiba</a></li>
-                            <li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
-                        </ul>                                
-        </li>
-        <li><a href="catalog-notebooks.html">Смартфоны</a>
-        	<ul class="level2 pic-smartphone"> 
-                    <li><a href="catalog-notebooks.html">Acer</a></li>
-                    <li><a href="catalog-notebooks.html">Alcatel</a></li>
-                    <li><a href="catalog-notebooks.html">Apple</a></li>
-                    <li><a href="catalog-notebooks.html">Asus</a></li>
-                    <li><a href="catalog-notebooks.html">BlackBerry</a></li>
-                    <li><a href="catalog-notebooks.html">Caterpillar</a></li>                
-                    <li><a href="catalog-notebooks.html">Coolpad</a></li>
-                    <li><a href="catalog-notebooks.html">Elari</a></li>
-                    <li><a href="catalog-notebooks.html">Explay</a></li>
-                    <li><a href="catalog-notebooks.html">Fly</a></li>
-                    <li><a href="catalog-notebooks.html">Gigabyte</a></li>
-                    <li><a href="catalog-notebooks.html">HTC</a></li>
-                    <li><a href="catalog-notebooks.html">Honor</a></li>
-                    <li><a href="catalog-notebooks.html">Huawei</a></li>
-                    <li><a href="catalog-notebooks.html">JCB</a></li>
-                    <li><a href="catalog-notebooks.html">LG</a></li>
-                    <li><a href="catalog-notebooks.html">Lenovo</a></li>
-                    <li><a href="catalog-notebooks.html">Microsoft</a></li>
-                    <li><a href="catalog-notebooks.html">Motorola</a></li>
-                    <li><a href="catalog-notebooks.html">Nokia</a></li>
-                    <li><a href="catalog-notebooks.html">Nomi</a></li>
-                    <li><a href="catalog-notebooks.html">Prestigio</a></li>
-                    <li><a href="catalog-notebooks.html">RugGear</a></li>
-                    <li><a href="catalog-notebooks.html">Samsung</a></li>
-                    <li><a href="catalog-notebooks.html">Sigma</a></li>
-                    <li><a href="catalog-notebooks.html">Sony</a></li>
-                    <li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>        
-            </ul>            
-        </li>
-        <li><a href="catalog-notebooks.html">Планшеты</a>
-        	<ul class="level2 pic-planshet">
-        		   	<li><a href="catalog-notebooks.html">Acer</a></li>
-        		   	<li><a href="catalog-notebooks.html">Apple</a></li>
-                    <li><a href="catalog-notebooks.html">Assistant</a></li>                
-                    <li><a href="catalog-notebooks.html">DEX</a></li>
-                    <li><a href="catalog-notebooks.html">Fly</a></li>
-                    <li><a href="catalog-notebooks.html">Huawei</a></li>
-                    <li><a href="catalog-notebooks.html">LG</a></li>
-                    <li><a href="catalog-notebooks.html">Lenovo</a></li>
-                    <li><a href="catalog-notebooks.html">Microsoft</a></li>
-                    <li><a href="catalog-notebooks.html">Prestigio</a></li>
-                    <li><a href="catalog-notebooks.html">Samsung</a></li>
-                    <li><a href="catalog-notebooks.html">Sony</a></li>
-                    <li><a href="catalog-notebooks.html">Wexler</a></li>                    
-                    <li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
-        	</ul>
-        </li>
-        <li><a href="catalog-notebooks.html">Телевизоры</a>
-	        <ul class="change pic-tv"> 
-        		   	<li><a href="catalog-notebooks.html">Bravis</a></li>
-                    <li><a href="catalog-notebooks.html">DEX</a></li>
-                    <li><a href="catalog-notebooks.html">Honda</a></li>
-                    <li><a href="catalog-notebooks.html">LG</a></li>
-                    <li><a href="catalog-notebooks.html">Mystery Electronics</a></li>
-                    <li><a href="catalog-notebooks.html">Nomi</a></li>
-                    <li><a href="catalog-notebooks.html">Panasonic</a></li>
-                    <li><a href="catalog-notebooks.html">Philips</a></li>
-                    <li><a href="catalog-notebooks.html">Romsat</a></li>
-                    <li><a href="catalog-notebooks.html">Samsung</a></li>
-                    <li><a href="catalog-notebooks.html">Saturn</a></li>
-                    <li><a href="catalog-notebooks.html">Sharp</a></li>
-        		   	<li><a href="catalog-notebooks.html">Sony</a></li>
-                    <li><a href="catalog-notebooks.html">Toshiba</a></li>
-                    <li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
-            </ul>
-        </li>
-        <li><a href="catalog-notebooks.html">Фототехника</a>
-	        <ul class="change pic-foto"> 
-        		   	<li><a href="catalog-notebooks.html">Nikon</a></li>
-                    <li><a href="catalog-notebooks.html">Canon</a></li>
-                    <li><a href="catalog-notebooks.html">Sony</a></li>
-                    <li><a href="catalog-notebooks.html">Samsung</a></li>
-                    <li><a href="catalog-notebooks.html">Panasonic</a></li>
-                    <li><a href="catalog-notebooks.html">Fujifilm</a></li>
-                    <li><a href="catalog-notebooks.html">Pentax</a></li>
-                    <li><a href="catalog-notebooks.html">Olympus</a></li>
-                    <li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
-            </ul>
-        </li>
-        <li><a href="catalog-notebooks.html">Бытовая техника</a>
-	        <ul class="change pic-byttehnika"> 
-        		   	<li><a href="catalog-notebooks.html">Холодильники</a></li>
-                    <li><a href="catalog-notebooks.html">Стиральные машины</a></li>
-                    <li><a href="catalog-notebooks.html">Плиты</a></li>
-                    <li><a href="catalog-notebooks.html">Вытяжки</a></li>
-                    <li><a href="catalog-notebooks.html">Кондиционеры</a></li>
-                    <li><a href="catalog-notebooks.html">Пылесосы</a></li>
-                    <li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-</div> 
+		<!--Контейнер-оболочка для меню -->
+		<div class="wrap-menu">
+			<nav class="menu">
+				<ul class="level1"><a href="#">МЕНЮ</a>
+					<li><a href="catalog-notebooks.html">Ноутбуки</a>
+						<ul class="level2 pic-komp">
+							<!-- Оболочка для выпадающего списка меню -->
+							<li><a href="catalog-notebooks.html">ASUS</a></li>
+							<li><a href="catalog-notebooks.html">Acer</a></li>
+							<li><a href="catalog-notebooks.html">Apple</a></li>
+							<li><a href="catalog-notebooks.html">Dell</a></li>
+							<li><a href="catalog-notebooks.html">Fujitsu</a></li>
+							<li><a href="catalog-notebooks.html">HP</a></li>
+							<li><a href="catalog-notebooks.html">Lenovo</a></li>
+							<li><a href="catalog-notebooks.html">MSI</a></li>
+							<li><a href="catalog-notebooks.html">Panasonic</a></li>
+							<li><a href="catalog-notebooks.html">Samsung</a></li>
+							<li><a href="catalog-notebooks.html">Sony</a></li>
+							<li><a href="catalog-notebooks.html">Toshiba</a></li>
+							<li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
+						</ul>
+					</li>
+					<li><a href="catalog-notebooks.html">Смартфоны</a>
+						<ul class="level2 pic-smartphone">
+							<li><a href="catalog-notebooks.html">Acer</a></li>
+							<li><a href="catalog-notebooks.html">Alcatel</a></li>
+							<li><a href="catalog-notebooks.html">Apple</a></li>
+							<li><a href="catalog-notebooks.html">Asus</a></li>
+							<li><a href="catalog-notebooks.html">BlackBerry</a></li>
+							<li><a href="catalog-notebooks.html">Caterpillar</a></li>
+							<li><a href="catalog-notebooks.html">Coolpad</a></li>
+							<li><a href="catalog-notebooks.html">Elari</a></li>
+							<li><a href="catalog-notebooks.html">Explay</a></li>
+							<li><a href="catalog-notebooks.html">Fly</a></li>
+							<li><a href="catalog-notebooks.html">Gigabyte</a></li>
+							<li><a href="catalog-notebooks.html">HTC</a></li>
+							<li><a href="catalog-notebooks.html">Honor</a></li>
+							<li><a href="catalog-notebooks.html">Huawei</a></li>
+							<li><a href="catalog-notebooks.html">JCB</a></li>
+							<li><a href="catalog-notebooks.html">LG</a></li>
+							<li><a href="catalog-notebooks.html">Lenovo</a></li>
+							<li><a href="catalog-notebooks.html">Microsoft</a></li>
+							<li><a href="catalog-notebooks.html">Motorola</a></li>
+							<li><a href="catalog-notebooks.html">Nokia</a></li>
+							<li><a href="catalog-notebooks.html">Nomi</a></li>
+							<li><a href="catalog-notebooks.html">Prestigio</a></li>
+							<li><a href="catalog-notebooks.html">RugGear</a></li>
+							<li><a href="catalog-notebooks.html">Samsung</a></li>
+							<li><a href="catalog-notebooks.html">Sigma</a></li>
+							<li><a href="catalog-notebooks.html">Sony</a></li>
+							<li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
+						</ul>
+					</li>
+					<li><a href="catalog-notebooks.html">Планшеты</a>
+						<ul class="level2 pic-planshet">
+							<li><a href="catalog-notebooks.html">Acer</a></li>
+							<li><a href="catalog-notebooks.html">Apple</a></li>
+							<li><a href="catalog-notebooks.html">Assistant</a></li>
+							<li><a href="catalog-notebooks.html">DEX</a></li>
+							<li><a href="catalog-notebooks.html">Fly</a></li>
+							<li><a href="catalog-notebooks.html">Huawei</a></li>
+							<li><a href="catalog-notebooks.html">LG</a></li>
+							<li><a href="catalog-notebooks.html">Lenovo</a></li>
+							<li><a href="catalog-notebooks.html">Microsoft</a></li>
+							<li><a href="catalog-notebooks.html">Prestigio</a></li>
+							<li><a href="catalog-notebooks.html">Samsung</a></li>
+							<li><a href="catalog-notebooks.html">Sony</a></li>
+							<li><a href="catalog-notebooks.html">Wexler</a></li>
+							<li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
+						</ul>
+					</li>
+					<li><a href="catalog-notebooks.html">Телевизоры</a>
+						<ul class="change pic-tv">
+							<li><a href="catalog-notebooks.html">Bravis</a></li>
+							<li><a href="catalog-notebooks.html">DEX</a></li>
+							<li><a href="catalog-notebooks.html">Honda</a></li>
+							<li><a href="catalog-notebooks.html">LG</a></li>
+							<li><a href="catalog-notebooks.html">Mystery Electronics</a></li>
+							<li><a href="catalog-notebooks.html">Nomi</a></li>
+							<li><a href="catalog-notebooks.html">Panasonic</a></li>
+							<li><a href="catalog-notebooks.html">Philips</a></li>
+							<li><a href="catalog-notebooks.html">Romsat</a></li>
+							<li><a href="catalog-notebooks.html">Samsung</a></li>
+							<li><a href="catalog-notebooks.html">Saturn</a></li>
+							<li><a href="catalog-notebooks.html">Sharp</a></li>
+							<li><a href="catalog-notebooks.html">Sony</a></li>
+							<li><a href="catalog-notebooks.html">Toshiba</a></li>
+							<li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
+						</ul>
+					</li>
+					<li><a href="catalog-notebooks.html">Фототехника</a>
+						<ul class="change pic-foto">
+							<li><a href="catalog-notebooks.html">Nikon</a></li>
+							<li><a href="catalog-notebooks.html">Canon</a></li>
+							<li><a href="catalog-notebooks.html">Sony</a></li>
+							<li><a href="catalog-notebooks.html">Samsung</a></li>
+							<li><a href="catalog-notebooks.html">Panasonic</a></li>
+							<li><a href="catalog-notebooks.html">Fujifilm</a></li>
+							<li><a href="catalog-notebooks.html">Pentax</a></li>
+							<li><a href="catalog-notebooks.html">Olympus</a></li>
+							<li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
+						</ul>
+					</li>
+					<li><a href="catalog-notebooks.html">Бытовая техника</a>
+						<ul class="change pic-byttehnika">
+							<li><a href="catalog-notebooks.html">Холодильники</a></li>
+							<li><a href="catalog-notebooks.html">Стиральные машины</a></li>
+							<li><a href="catalog-notebooks.html">Плиты</a></li>
+							<li><a href="catalog-notebooks.html">Вытяжки</a></li>
+							<li><a href="catalog-notebooks.html">Кондиционеры</a></li>
+							<li><a href="catalog-notebooks.html">Пылесосы</a></li>
+							<li class="see-all"><a href="catalog-notebooks.html">Смотреть все модели</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
-<!-- КОНТЕЙНЕР ДЛЯ ОСНОВНОГО КОНТЕНТА -->
-<div class="main"> 
+		<!-- КОНТЕЙНЕР ДЛЯ ОСНОВНОГО КОНТЕНТА -->
+		<div class="main">
 
-<!-- ОСНОВНОЙ СЛАЙДЕР -->
+			<!-- ОСНОВНОЙ СЛАЙДЕР -->
 
-<div class="main-slider">     
-	<div class="main-slider-ramka">		
-		<div class="slider slider3">
-        	<div class="sliderContent">	
-            	<div class="item">	
-               		<a href="#"><img src="images/main-slider/img1.jpg" alt="" /></a>
-           		</div>
-           		<div class="item">
-               		<a href="#"> <img src="images/main-slider/img2.jpg" alt="" /></a>
-           		</div>
-           		<div class="item">
-               		<a href="#"><img src="images/main-slider/img3.jpg" alt="" /></a>
-           		</div>
-           		<div class="item">
-               		<a href="#"><img src="images/main-slider/img4.jpg" alt="" /></a>
-           		</div>
-           		<div class="item">
-               		<a href="#"><img src="images/main-slider/img5.jpg" alt="" /></a>
-           		</div>
-        	</div>
-    	</div>
-    </div>	
-</div>
+			<div class="main-slider">
+				<div class="main-slider-ramka">
+					<div class="slider slider3">
+						<div class="sliderContent">
+							<div class="item">
+								<a href="#"><img src="images/main-slider/img1.jpg" alt="" /></a>
+							</div>
+							<div class="item">
+								<a href="#"> <img src="images/main-slider/img2.jpg" alt="" /></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/main-slider/img3.jpg" alt="" /></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/main-slider/img4.jpg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<div class="clear" id="clear-slider"> </div>
+			<div class="clear" id="clear-slider"> </div>
 
-<!-- Хлебные крошки -->
+			<!-- Хлебные крошки -->
 
-<div class="kroshki" id="onmain"> 
-	<ul id="kroshka">
-		<li><a href="index.html">Главная</a></li>
-	</ul>
-</div>
+			<div class="kroshki" id="onmain">
+				<ul id="kroshka">
+					<li><a href="index.html">Главная</a></li>
+				</ul>
+			</div>
 
 
-<!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
+			<!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
 
- 	<div class="popular">
-    	<div class="wrap-topic-name">
-            <h3>Популярные товары</h3>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/AppleiPhone5S16Gbspacegray.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Apple iPhone 5S 16Gb space gray</a>
-                <div class="wrap-rateit poppos poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">45 </span>отзывов </a>
-                <span class="price">9 399 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/lg_g4s_dual_h734_titan_silver_1_1_1.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Мобильный телефон LG G4s Dual H734 Titan Silver</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">28 </span>отзывов </a>
-                <span class="price">5 999 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/39329005bea31951a9fb0e6dacbdcad8_1_1_cr_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Телевизор Sony KD-55X8505CBR2 </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">50 </span>отзывов </a>
-                <span class="price">52 999 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/f12a8hds5_front_m.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Стиральная машина LG F 12A8 HDS5</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">31 </span>отзыв </a>
-                <span class="price">16 099 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/28590055.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Холодильник Zanussi ZRT23102WA</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">10 </span>отзывов </a>
-                <span class="price">5 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/asus-x555-_x555ub-xo031d_-4.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Ноутбук Asus X555 (X555UB-XO031D)</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">12 </span>отзывов </a>
-                <span class="price">17 145 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-    </div>
-    
-<div class="clear"> </div>
+			<div class="popular">
+				<div class="wrap-topic-name">
+					<h3>Популярные товары</h3>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/AppleiPhone5S16Gbspacegray.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description"> Apple iPhone 5S 16Gb space gray</a>
+						<div class="wrap-rateit poppos poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">45 </span>отзывов </a>
+						<span class="price">9 399 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/lg_g4s_dual_h734_titan_silver_1_1_1.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description"> Мобильный телефон LG G4s Dual H734 Titan Silver</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">28 </span>отзывов </a>
+						<span class="price">5 999 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/39329005bea31951a9fb0e6dacbdcad8_1_1_cr_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description"> Телевизор Sony KD-55X8505CBR2 </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">50 </span>отзывов </a>
+						<span class="price">52 999 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/f12a8hds5_front_m.jpg"
+									alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Стиральная машина LG F 12A8 HDS5</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">31 </span>отзыв </a>
+						<span class="price">16 099 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/28590055.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Холодильник Zanussi ZRT23102WA</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">10 </span>отзывов </a>
+						<span class="price">5 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/asus-x555-_x555ub-xo031d_-4.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Ноутбук Asus X555 (X555UB-XO031D)</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">12 </span>отзывов </a>
+						<span class="price">17 145 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+			</div>
 
-<!-- НОВИНКИ -->
-    <div class="new">
-    	<div class="wrap-topic-name">
-            <h3>НОВИНКИ</h3>
-        </div>
-		<div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/AppleiPhone5S16Gbspacegray.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Apple iPhone 5S 16Gb space gray</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">45 </span>отзывов </a>
-                <span class="price">9 399 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/lg_g4s_dual_h734_titan_silver_1_1_1.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Мобильный телефон LG G4s Dual H734 Titan Silver</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">28 </span>отзывов </a>
-                <span class="price">5 999 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/39329005bea31951a9fb0e6dacbdcad8_1_1_cr_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Телевизор Sony KD-55X8505CBR2 </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">50 </span>отзывов </a>
-                <span class="price">52 999 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/f12a8hds5_front_m.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Стиральная машина LG F 12A8 HDS5</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">31 </span>отзыв </a>
-                <span class="price">16 099 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/28590055.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Холодильник Zanussi ZRT23102WA</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">10 </span>отзывов </a>
-                <span class="price">5 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/asus-x555-_x555ub-xo031d_-4.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Ноутбук Asus X555 (X555UB-XO031D)</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">12 </span>отзывов </a>
-                <span class="price">17 145 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
-                <span class="price">11 499 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-        <div class="wrap-item"> 
-        	<div class="item"> 
-            	<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt=""/> </a></div>
-                <a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
-                <div class="wrap-rateit poppos">
-                    <div class="rateit"> </div>
-                </div>
-                <a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
-                <span class="price">3 899 грн.</span>
-                <input type="button" name="buy" value="Купить" class="btn-buy"/>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Кнопка подъема страницы вверх -->
-	<div id="scroller" class="b-top" style="display: none;"><span class="b-top-but"></span>
+			<div class="clear"> </div>
+
+			<!-- НОВИНКИ -->
+			<div class="new">
+				<div class="wrap-topic-name">
+					<h3>НОВИНКИ</h3>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/AppleiPhone5S16Gbspacegray.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description"> Apple iPhone 5S 16Gb space gray</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">45 </span>отзывов </a>
+						<span class="price">9 399 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/lg_g4s_dual_h734_titan_silver_1_1_1.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description"> Мобильный телефон LG G4s Dual H734 Titan Silver</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">28 </span>отзывов </a>
+						<span class="price">5 999 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/39329005bea31951a9fb0e6dacbdcad8_1_1_cr_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description"> Телевизор Sony KD-55X8505CBR2 </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">50 </span>отзывов </a>
+						<span class="price">52 999 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/f12a8hds5_front_m.jpg"
+									alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Стиральная машина LG F 12A8 HDS5</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">31 </span>отзыв </a>
+						<span class="price">16 099 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/28590055.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Холодильник Zanussi ZRT23102WA</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">10 </span>отзывов </a>
+						<span class="price">5 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/asus-x555-_x555ub-xo031d_-4.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Ноутбук Asus X555 (X555UB-XO031D)</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">12 </span>отзывов </a>
+						<span class="price">17 145 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/fs_cat.1390470664.2.b_3.jpg" alt="" /> </a></div>
+						<a href="item-notebook.html" id="description">Фотоаппарат Nikon D3300 18-55 VR II Kit </a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">11 </span>отзывов </a>
+						<span class="price">11 499 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+				<div class="wrap-item">
+					<div class="item">
+						<div class="item-pic"> <a href="item-notebook.html"><img src="images/items galery/919-1_3_2.jpg" alt="" />
+							</a></div>
+						<a href="item-notebook.html" id="description"> Пылесос Zelmer Aquawelt 919.0 ST</a>
+						<div class="wrap-rateit poppos">
+							<div class="rateit"> </div>
+						</div>
+						<a href="#" class="n-otziv"><span id="n-otziv">7 </span>отзывов </a>
+						<span class="price">3 899 грн.</span>
+						<input type="button" name="buy" value="Купить" class="btn-buy" />
+					</div>
+				</div>
+			</div>
+
+			<!-- Кнопка подъема страницы вверх -->
+			<div id="scroller" class="b-top" style="display: none;"><span class="b-top-but"></span>
+			</div>
+
+		</div>
+
+
+		<div class="overlay"> </div>
+		<div class="wrap-korzina-page">
+			<div class="korzina-page">
+				<div id="close">X</div>
+				<div class="topic">
+					<h3>Корзина</h3>
+				</div>
+				<div class="korzina-page-shapka">
+					<table>
+						<tr>
+							<td class="korzina-vid">Фото</td>
+							<td class="korzina-naimenovanie">Наименование</td>
+							<td class="korzina-kolvo">Количество</td>
+							<td class="korzina-stoimost">Стоимость</td>
+						</tr>
+					</table>
+				</div>
+				<div class="korzina-item-wrap">
+					<div class="item-delete">x</div>
+					<div class="wrap-pic">
+						<div class="korzina-item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/notebooks/lenovo/lenovo_ideapad_100-15_1_2_6.jpg" alt="" /> </a></div>
+					</div>
+					<div class="wrap-naimenovanie">
+						<a href="item-notebook.html">НОУТБУК LENOVO IDEAPAD 100-14 (80MH001XUA)</a>
+						<p class="price2">9499</p>
+					</div>
+					<div class="wrap-korzina-kolvo">
+						<div class="number">
+							<span class="minus">-</span>
+							<input class="kol" type="text" value="1" size="5" />
+							<span class="plus">+</span>
+						</div>
+					</div>
+					<div class="wrap-korzina-stoimost">
+						<span class="stoimost-item">9499</span>
+					</div>
+				</div>
+				<div class="korzina-item-wrap">
+					<div class="item-delete">x</div>
+					<div class="wrap-pic">
+						<div class="korzina-item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/notebooks/asus/171196-9.jpg" alt="" /> </a></div>
+					</div>
+					<div class="wrap-naimenovanie">
+						<a href="item-notebook.html">НОУТБУК Asus EeeBook E502</a>
+						<p class="price2">9053</p>
+					</div>
+					<div class="wrap-korzina-kolvo">
+						<div class="number">
+							<span class="minus">-</span>
+							<input class="kol" type="text" value="1" size="5" />
+							<span class="plus">+</span>
+						</div>
+					</div>
+					<div class="wrap-korzina-stoimost">
+						<span class="stoimost-item">9053</span>
+					</div>
+				</div>
+				<div class="korzina-item-wrap">
+					<div class="item-delete">x</div>
+					<div class="wrap-pic">
+						<div class="korzina-item-pic"> <a href="item-notebook.html"><img
+									src="images/items galery/notebooks/acer/acer-packard-bell-entg71bm-c5eb-1_2.jpg" alt="" /> </a></div>
+					</div>
+					<div class="wrap-naimenovanie">
+						<a href="item-notebook.html">НОУТБУК Acer Packard Bell ENTG71BM-C6K8</a>
+						<p class="price2">6700</p>
+					</div>
+					<div class="wrap-korzina-kolvo">
+						<div class="number">
+							<span class="minus">-</span>
+							<input class="kol" type="text" value="1" size="5" />
+							<span class="plus">+</span>
+						</div>
+					</div>
+					<div class="wrap-korzina-stoimost">
+						<span class="stoimost-item">6700</span>
+					</div>
+				</div>
+
+				<div class="korzina-niz">
+					<div class="korzina-niz-inner">
+						<button type="button" class="continue" id="continue" value="Продолжить покупки">Продолжить покупки </button>
+						<div class="summa-itog">0</div>
+						<button type="button" class="zakaz" id="zakaz" value="Оформить заказ">Оформить заказ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer>
+			<p class="copyright">© Delta</p>
+			<a href="http://www.dikht.github.io/delta" class="studio">Создание сайта</a>
+			<div class="footer-left"> </div>
+			<div class="footer-center">
+				<a class="tele2" href="tel:+380501234567">(067) 123-45-67</a>
+				<a class="tele1" href="tel:+380501234567">(050) 123-45-67</a>
+			</div>
+			<div class="footer-right">
+				<ul class="soclinks">
+					<li><a href="#" id="vk"> </a> </li>
+					<li><a href="#" id="fb"> </a> </li>
+					<li><a href="#" id="google"> </a> </li>
+					<li><a href="#" id="youtube"> </a> </li>
+				</ul>
+			</div>
+		</footer>
+
 	</div>
-    
-</div>
 
-
-<div class="overlay"> </div>
-<div class="wrap-korzina-page">
-	<div class="korzina-page">
-    	<div id="close">X</div>
-        <div class="topic"><h3>Корзина</h3></div>
-		<div class="korzina-page-shapka"> 
-			<table>
-                <tr> 
-                    <td class="korzina-vid">Фото</td>
-                    <td class="korzina-naimenovanie">Наименование</td>
-                    <td class="korzina-kolvo">Количество</td>
-                    <td class="korzina-stoimost">Стоимость</td>
-                </tr>
-            </table>
-        </div>
-        <div class="korzina-item-wrap">
-        	<div class="item-delete">x</div> 
-			<div class="wrap-pic">
-            	<div class="korzina-item-pic"> <a href="item-notebook.html"><img src="images/items galery/notebooks/lenovo/lenovo_ideapad_100-15_1_2_6.jpg" alt=""/> </a></div>
-            </div>
-            <div class="wrap-naimenovanie">
-            	<a href="item-notebook.html">НОУТБУК LENOVO IDEAPAD 100-14 (80MH001XUA)</a>
-            	<p class="price2">9499</p>
-            </div>
-            <div class="wrap-korzina-kolvo">
-				<div class="number">
-    				<span class="minus">-</span>
-    					<input class="kol" type="text" value="1" size="5"/>
-    				<span class="plus">+</span>
-				</div>
-            </div>
-            <div class="wrap-korzina-stoimost"> 
-            	<span class="stoimost-item">9499</span>
-            </div>
-        </div>
-        <div class="korzina-item-wrap">
-          	<div class="item-delete">x</div> 
-			<div class="wrap-pic">
-            	<div class="korzina-item-pic"> <a href="item-notebook.html"><img src="images/items galery/notebooks/asus/171196-9.jpg" alt=""/> </a></div>
-            </div>
-            <div class="wrap-naimenovanie">
-            	<a href="item-notebook.html">НОУТБУК Asus EeeBook E502</a>
-            	<p class="price2">9053</p>
-            </div>
-            <div class="wrap-korzina-kolvo">
-				<div class="number">
-    				<span class="minus">-</span>
-    					<input class="kol" type="text" value="1" size="5"/>
-    				<span class="plus">+</span>
-				</div>
-            </div>
-            <div class="wrap-korzina-stoimost"> 
-            	<span class="stoimost-item">9053</span>
-            </div>
-        </div>
-        <div class="korzina-item-wrap">
-          	<div class="item-delete">x</div> 
-			<div class="wrap-pic">
-            	<div class="korzina-item-pic"> <a href="item-notebook.html"><img src="images/items galery/notebooks/acer/acer-packard-bell-entg71bm-c5eb-1_2.jpg" alt=""/> </a></div>
-            </div>
-            <div class="wrap-naimenovanie">
-            	<a href="item-notebook.html">НОУТБУК Acer Packard Bell ENTG71BM-C6K8</a>
-            	<p class="price2">6700</p>
-            </div>
-            <div class="wrap-korzina-kolvo">
-				<div class="number">
-    				<span class="minus">-</span>
-    					<input class="kol" type="text" value="1" size="5"/>
-    				<span class="plus">+</span>
-				</div>
-            </div>
-            <div class="wrap-korzina-stoimost"> 
-            	<span class="stoimost-item">6700</span>
-            </div>
-        </div>
-        
-    	<div class="korzina-niz"> 
-        	<div class="korzina-niz-inner">
-    	        <button type="button" class="continue" id="continue" value="Продолжить покупки">Продолжить покупки </button>
-                <div class="summa-itog">0</div>
-        	    <button type="button" class="zakaz" id="zakaz" value="Оформить заказ">Оформить заказ</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<footer>
-	<p class="copyright">© Delta</p>
-	<a href="http://www.dikht.github.io/delta" class="studio">Создание сайта</a>
-    <div class="footer-left"> </div>
-    <div class="footer-center"> 
-    	<a class="tele2" href="tel:+380501234567">(067) 123-45-67</a>
-       	<a class="tele1" href="tel:+380501234567">(050) 123-45-67</a>
-    </div>
-    <div class="footer-right"> 
-    <ul class="soclinks">
-    	<li><a href="#" id="vk"> </a> </li>
-       	<li><a href="#" id="fb"> </a> </li>
-      	<li><a href="#" id="google"> </a> </li>
-       	<li><a href="#" id="youtube"> </a> </li>
-    </ul>
-    </div>
-</footer>
-
-</div>
-
-<script type="text/javascript"> 
-// Свечение поля поиска при наведении курсором или вводе текста, появление кнопки поиска  
-$("#searchp").mouseover(function()
-	{ $("#wrap-search").addClass("wrap-search-focus");});
-$("#searchp").mouseout(function()
-	{ $("#wrap-search").removeClass("wrap-search-focus");});
-$("#searchp").focus (function()
-	{ $("#wrap-search").addClass("wrap-search-focus2");
-	$("#find-btn").css("display","block");
-	});
-$("#searchp").blur (function()
-	{ $("#wrap-search").removeClass("wrap-search-focus2");
-	$("#find-btn").css("display","none");
-	});
-</script>	
-
-<script type="text/javascript"> 
-<!-- Настройки слайдера -->
-$(".slider3").mobilyslider({
-        transition: "fade",
-        animationSpeed: 800,
-		autoplay: true,
-    	autoplaySpeed: 5000,
-        pauseOnHover: true,
-		bullets: true,
-        arrowsHide: false
-    });
-</script>
-
-<script type="text/javascript"> 
-/* Кнопка подъема вверх страницы */
-$(document).ready(function(){
-$(window).scroll(function () {if ($(this).scrollTop() > 400) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
-$('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 1000); return false;});
-});
-</script>
-
-
-<script src="js/jquery-2.2.2.min.js"> </script>
-
-<script type="text/javascript" >
-        $(document).ready(function() {
-            $(".minus").click(function () {
-                var $input = $(this).parent().find("input");
-                var count = parseInt($input.val()) - 1;
-                count = count < 1 ? 1 : count;
-                $input.val(count);
-                $input.change();
-                return false;
-            });
-            $(".plus").click(function () {
-                var $input = $(this).parent().find("input");
-                $input.val(parseInt($input.val()) + 1);
-                $input.change();
-                return false;
-            });
-        });
-</script>
-
-<script type="text/javascript"> 
-$(document).ready(function() {
-	$("#korzina, input.btn-buy").click(function(){
-		$(".overlay").css("display","block");
-		$(".wrap-korzina-page").css("display","block")});		
-	$("#close, #continue").click(function(){
-		$(".overlay").css("display","none");
-		$(".wrap-korzina-page").css("display","none")});
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".item-delete").click(function(){
-    	$(this).parent("div").remove();
-		var summ = 0;
-		$(".stoimost-item").each(function(){
-			summ += parseInt($(this).html(), 10);
+	<script type="text/javascript">
+		// Свечение поля поиска при наведении курсором или вводе текста, появление кнопки поиска  
+		$("#searchp").mouseover(function () { $("#wrap-search").addClass("wrap-search-focus"); });
+		$("#searchp").mouseout(function () { $("#wrap-search").removeClass("wrap-search-focus"); });
+		$("#searchp").focus(function () {
+			$("#wrap-search").addClass("wrap-search-focus2");
+			$("#find-btn").css("display", "block");
 		});
-	$(".summa-itog").text(summ);
-	});
-});
-</script>
+		$("#searchp").blur(function () {
+			$("#wrap-search").removeClass("wrap-search-focus2");
+			$("#find-btn").css("display", "none");
+		});
+	</script>
 
-<script type="text/javascript"> 
-$(document).ready(function(e) {
-    var summ = 0;
-	$(".stoimost-item").each(function(){
-		summ += parseInt($(this).html(), 10);
-	});
-	$(".summa-itog").text(summ);
-});
-</script>
+	<script type="text/javascript">
+		<!-- Настройки слайдера -->
+		$(".slider3").mobilyslider({
+			transition: "fade",
+			animationSpeed: 800,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			pauseOnHover: true,
+			bullets: true,
+			arrowsHide: false
+		});
+	</script>
 
-<script type="text/javascript">
-$(document).ready(function(e) {
-	$(function () {
-		$(".kol").on("change", function () {
-			var cartItem = $(this).closest(".korzina-item-wrap");
-			var price = parseFloat(cartItem.find(".price2").text());
-			var kol = parseFloat(cartItem.find(".kol").val());
-			var totalCost = price * kol;
-			cartItem.find(".stoimost-item").text(totalCost);
+	<script type="text/javascript">
+		/* Кнопка подъема вверх страницы */
+		$(document).ready(function () {
+			$(window).scroll(function () { if ($(this).scrollTop() > 400) { $('#scroller').fadeIn(); } else { $('#scroller').fadeOut(); } });
+			$('#scroller').click(function () { $('body,html').animate({ scrollTop: 0 }, 1000); return false; });
+		});
+	</script>
+
+
+	<script src="js/jquery-2.2.2.min.js"> </script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".minus").click(function () {
+				var $input = $(this).parent().find("input");
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$(".plus").click(function () {
+				var $input = $(this).parent().find("input");
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#korzina, input.btn-buy").click(function () {
+				$(".overlay").css("display", "block");
+				$(".wrap-korzina-page").css("display", "block")
+			});
+			$("#close, #continue").click(function () {
+				$(".overlay").css("display", "none");
+				$(".wrap-korzina-page").css("display", "none")
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".item-delete").click(function () {
+				$(this).parent("div").remove();
+				var summ = 0;
+				$(".stoimost-item").each(function () {
+					summ += parseInt($(this).html(), 10);
+				});
+				$(".summa-itog").text(summ);
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
 			var summ = 0;
-			$(".stoimost-item").each(function(){
+			$(".stoimost-item").each(function () {
 				summ += parseInt($(this).html(), 10);
 			});
-		$(".summa-itog").text(summ);
+			$(".summa-itog").text(summ);
 		});
-	});
-});
-</script> 
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$(function () {
+				$(".kol").on("change", function () {
+					var cartItem = $(this).closest(".korzina-item-wrap");
+					var price = parseFloat(cartItem.find(".price2").text());
+					var kol = parseFloat(cartItem.find(".kol").val());
+					var totalCost = price * kol;
+					cartItem.find(".stoimost-item").text(totalCost);
+					var summ = 0;
+					$(".stoimost-item").each(function () {
+						summ += parseInt($(this).html(), 10);
+					});
+					$(".summa-itog").text(summ);
+				});
+			});
+		});
+	</script>
 
 </body>
+
 </html>
