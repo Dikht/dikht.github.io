@@ -1,0 +1,155 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 8 version
+*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 1px) {
+  .under-construction {
+    font-size: 28px;
+  }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.container {
+		max-width: 100%;
+	}
+
+	.item-name,
+	.price {
+		font-size: 6.5vw;
+	}
+
+	.desc {
+		font-size: 5vw;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
+  .under-construction {
+    font-size: 36px;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	* {
+		font-size: 24px;
+	}
+
+	.section-inner {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+
+	.item-name,
+	.price {
+		font-size: 1em;
+	}
+
+	.item-name {
+		margin-bottom: 20px;
+	}
+
+	.desc {
+		font-size: 0.9em;
+	}
+
+	.row-view {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-flex: 0;
+		    -ms-flex: none;
+		        flex: none;
+		font-size: 1.1em;
+	}
+
+	.row-view .item {
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+	}
+
+	.row-view .item-name {
+		padding-left: 20px;
+		font-size: 1.3em;
+	}
+
+	.row-view .desc {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+	.delivery {
+		max-width: 580px;
+	}
+
+	.delivery-man img {
+		max-height: 90px;
+	}
+
+	address a {
+		font-size: 1.5em;
+	}
+
+	.menu {
+		-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.menu li img {
+		width: 12vh;
+	}
+
+	.menuItem {
+		font-size: 1.2em;
+	}
+
+  .under-construction {
+    font-size: 42px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.section-inner {
+		-ms-grid-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+  .under-construction {
+    font-size: 56px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.container {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.section-inner {
+		-ms-grid-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+  .under-construction {
+    font-size: 64px;
+  }
+}
